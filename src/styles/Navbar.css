@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar a {
+    color: blue;
+    padding: 5px;
+    margin: 20px;
+    font-size: 18pt;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.navbar .active {
+    border-bottom: 4px solid blue;
+}
