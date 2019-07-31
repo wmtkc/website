@@ -14,8 +14,8 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <div className='nav-wrapper'> { this.state.extended 
-              ? <div className='navbar'>
+            <div className='nav-wrapper'>
+                <div className={this.state.extended ? 'navbar' : 'collapsed'}>
                     <div className='desktop-only'>
                         ICON
                     </div>
@@ -29,8 +29,7 @@ class Navbar extends React.Component {
                     <div className='desktop-only'>
                         ICON
                     </div>
-                </div> 
-              : null }
+                </div>
                 <div className='menu-toggle' onClick={this.toggleExtended}>MENU</div>
             </div>
         );

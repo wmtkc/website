@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Blog = () => {
+const Blog = ({ match }) => {
     return (
         <div>
             Blog!

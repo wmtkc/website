@@ -8,8 +8,17 @@
 .navbar {
     display: flex;
     flex-direction: row;
+    height: 250px;
     justify-content: space-between;
-    transition: height 0.5s ease;
+    overflow: hidden;
+    transition: height 0.25s ease;
+}
+
+.collapsed {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease;
 }
 
 .navbar div {
@@ -38,11 +47,6 @@
     visibility: hidden;
 }
 
-.collapsed {
-    height: 0;
-    transition: height 0.5s ease;
-}
-
 .menu-toggle {
     visibility: visible;
     background: grey;
@@ -54,6 +58,10 @@
 
 /* Tablet/Desktop */
 @media only screen and (min-width : 768px) {
+    .navbar {
+        height: auto;
+    }
+
     .navbar div {
         flex-direction: row;
         margin: 30px;
