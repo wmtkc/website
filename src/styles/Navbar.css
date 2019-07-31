@@ -1,14 +1,16 @@
 .nav-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 2px -2px grey;
+    background: #f0f0f0;
+    border-bottom: 4px solid #333333;
+    box-shadow: 5px 0 5px 2px #444444;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-    height: 250px;
+    height: 220px;
+    width: 100%;
     justify-content: space-between;
     overflow: hidden;
     transition: height 0.25s ease;
@@ -24,14 +26,19 @@
 .navbar div {
     display: flex;
     flex-direction: column;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 20px 0;
     text-align: center;
 }
 
+.navbar .icon {
+    line-height: 30px;
+    margin: 20px;
+}
+
 .navbar a {
-    color: blue;
-    padding-bottom: 3px;
-    margin: 0 20px 0 20px;
+    color: #444444;
+    padding-bottom: 2px;
+    margin: 0 20px 3px 20px;
     font-size: 18pt;
     font-family: sans-serif;
     text-decoration: none;
@@ -40,17 +47,19 @@
 }
 
 .navbar .active {
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid #444444;
 }
 
 .navbar .desktop-only {
     visibility: hidden;
+    height: 0;
+    width: 0;
 }
 
 .menu-toggle {
     visibility: visible;
     background: grey;
-    font-size: 18pt;
+    font-size: 24pt;
     font-family: sans-serif;
     text-decoration: none;
     text-align: center;
@@ -58,17 +67,23 @@
 
 /* Tablet/Desktop */
 @media only screen and (min-width : 768px) {
+    .nav-wrapper {
+        position: sticky;
+        top: 0;
+    }
+
     .navbar {
         height: auto;
     }
 
     .navbar div {
         flex-direction: row;
-        margin: 30px;
     }
 
     .navbar .desktop-only {
         visibility: visible;
+        height: auto;
+        width: auto;
     }
 
     .menu-toggle {

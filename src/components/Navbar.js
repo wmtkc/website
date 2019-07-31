@@ -16,7 +16,7 @@ class Navbar extends React.Component {
         return (
             <div className='nav-wrapper'>
                 <div className={this.state.extended ? 'navbar' : 'collapsed'}>
-                    <div className='desktop-only'>
+                    <div className='icon desktop-only'>
                         ICON
                     </div>
                     <div>
@@ -26,11 +26,11 @@ class Navbar extends React.Component {
                         <NavLink exact to='/about'>About</NavLink>
                         <NavLink exact to='/contact'>Contact</NavLink>
                     </div>
-                    <div className='desktop-only'>
+                    <div className='icon desktop-only'>
                         ICON
                     </div>
                 </div>
-                <div className='menu-toggle' onClick={this.toggleExtended}>MENU</div>
+                <div className='menu-toggle' onClick={this.toggleExtended}>≡</div>
             </div>
         );
     }

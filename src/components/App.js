@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from './Navbar.js';
-import Main from './Main.js';
+import Content from './Content.js';
+import '../styles/Content.css';
 
 const App = () => {
     return (
-        <div className='App'>
+        <div className='app'>
             <Navbar />
-            <Main />
+            <Content />
         </div>
     );
 }
