@@ -2,6 +2,7 @@ import React from 'react';
 
 class Blogpost extends React.Component {
     constructor() {
+        super()
         this.title = 'Test Post';
         this.summary = 'In which the post is tested';
         this.tags = ['Test', 'Blog', 'Tech'];
