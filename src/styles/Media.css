@@ -1,0 +1,46 @@
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.page .header {
+    font-size: 28pt;
+    font-family: sans-serif;
+}
+
+.page .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Body Text */
+.body p {
+    font-size: 18pt;
+    font-family: sans-serif;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Figure Image */
+.figure img {
+    max-height: 300px;
+    width: auto;
+    object-fit: scale-down;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -2px #444444;
+}
+
+/* Caption Text */
+.figure p {
+    font-size: 14pt;
+    font-style: italic;
+    font-family: serif;
+}
+

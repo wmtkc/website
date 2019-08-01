@@ -12,6 +12,7 @@
     height: 220px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
     transition: height 0.25s ease;
 }
@@ -38,7 +39,7 @@
 .navbar a {
     color: #444444;
     padding-bottom: 2px;
-    margin: 0 20px 3px 20px;
+    margin: 5px 20px 3px 20px;
     font-size: 18pt;
     font-family: sans-serif;
     text-decoration: none;
@@ -63,6 +64,7 @@
     font-family: sans-serif;
     text-decoration: none;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 /* Tablet/Desktop */
@@ -89,5 +91,6 @@
     .menu-toggle {
         visibility: hidden;
         height: 0;
+        width: 0;
     }
 }
