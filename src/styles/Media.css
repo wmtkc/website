@@ -50,7 +50,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .card {
@@ -64,6 +69,7 @@
     margin: 0 20px 20px 20px;
     box-shadow: 5px 5px 5px -2px #444444;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .card img {
@@ -84,6 +90,7 @@
     color: white;
     font-size: 16pt;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 .card .date {

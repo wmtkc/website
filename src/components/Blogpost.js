@@ -1,16 +1,54 @@
 import React from 'react';
+import Strapi from 'strapi-sdk-javascript';
+import dateFormat from 'dateformat';
+import '../styles/Media.css';
 
-class Blogpost extends React.Component {
-    constructor() {
-        super()
-        this.title = 'Test Post';
-        this.summary = 'In which the post is tested';
-        this.tags = ['Test', 'Blog', 'Tech'];
+const strapiURL = 'http://localhost:1337';
+const strapi = new Strapi(strapiURL);
+
+class BlogPost extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            url: this.props.match.params.postURL,
+            title: '',
+            body: '',
+            date: '',
+            updated: ''
+        };
+    }
+
+    async componentDidMount () {
+        try {
+            const posts = await strapi.getEntries('blogposts');
+            posts.forEach((posts) => {
+                if (posts.url === this.state.url) {
+                    this.setState({
+                        title: posts.title,
+                        body: posts.body,
+                        date: posts.created_at,
+                        updated: posts.updated_at
+                    })
+                }
+            })
+        } catch (err) {
+            console.error(err);
+        }
     }
 
     render() {
         return (
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div className='page'>
+                <span className='header'>{this.state.title}</span>
+                <div className='body'>
+                    <p>{this.state.body}</p>
+                    <span>
+                        {dateFormat(this.state.date, 'yyyy-mm-dd') !== dateFormat(this.state.updated, 'yyyy-mm-dd') ? 'Updated: ' + dateFormat(this.state.updated, 'mmmm dS, yyyy') : ''}
+                    </span>
+                </div>
+            </div>
         );
     }
 }
+
+export default BlogPost;

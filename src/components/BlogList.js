@@ -27,11 +27,12 @@ class BlogList extends React.Component {
     render () {
         const cards = [];
         this.state.posts.forEach((post) => {
-            cards.push(<PostCard key={post.id} 
+            cards.push(<PostCard key={post.id}
+                                 url={post.url}
                                  title={post.title} 
                                  coverImg={post.media ? strapiURL + post.media[0].url : noCover} 
                                  date={dateFormat(post.created_at, 'mmmm dS, yyyy')} />)
-        })
+        });
         return (
             <div className='posts'>
                 {cards}

@@ -5,11 +5,15 @@ import '../styles/Navbar.css';
 class Navbar extends React.Component {
     constructor() {
         super();
-        this.state = {extended: true};
+        this.state = {
+            extended: true
+        };
     }
 
     toggleExtended = () => {
-        this.setState({extended: !this.state.extended});
+        this.setState({
+            extended: !this.state.extended
+        });
     }
 
     render() {
@@ -21,10 +25,10 @@ class Navbar extends React.Component {
                     </div>
                     <div>
                         <NavLink exact to='/'>Home</NavLink>
-                        <NavLink exact to='/projects'>Projects</NavLink>
-                        <NavLink exact to='/blog'>Blog</NavLink>
-                        <NavLink exact to='/about'>About</NavLink>
-                        <NavLink exact to='/contact'>Contact</NavLink>
+                        <NavLink to='/projects'>Projects</NavLink>
+                        <NavLink to='/blog'>Blog</NavLink>
+                        <NavLink to='/about'>About</NavLink>
+                        <NavLink to='/contact'>Contact</NavLink>
                     </div>
                     <div className='icon desktop-only'>
                         ICON
