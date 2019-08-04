@@ -28,6 +28,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^5.0.0",
+    "react-markdown": "^4.1.0",
     "require": "^2.4.20",
     "style-loader": "^0.23.1",
     "transform-runtime": "0.0.0",

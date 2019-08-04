@@ -1,15 +1,15 @@
 import React from 'react';
 import Navbar from './Navbar.js';
 import Content from './Content.js';
-import '../styles/Content.css';
+import '../styles/Containers.css';
 
-const App = () => {
+const Page = () => {
     return (
-        <div className='app'>
+        <div className='page'>
             <Navbar />
             <Content />
         </div>
     );
 }
 
-export default App;
+export default Page;
