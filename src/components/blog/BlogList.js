@@ -2,6 +2,7 @@ import React from 'react';
 import Strapi from 'strapi-sdk-javascript';
 import dateFormat from 'dateformat';
 import PostCard from './PostCard';
+import '../../styles/BlogList.css';
 import noCover from '../../img/no-cover.jpg'
 
 const cms = 'http://localhost:1337';

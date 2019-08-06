@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../styles/Content.css';
+import '../../styles/BlogList.css';
 
 class PostCard extends React.Component {
     render() {

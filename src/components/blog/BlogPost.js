@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
 import Strapi from 'strapi-sdk-javascript';
 import dateFormat from 'dateformat';
 import '../../styles/Content.css';

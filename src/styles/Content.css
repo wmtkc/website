@@ -1,3 +1,10 @@
+.banner {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 36pt;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -33,11 +40,9 @@
 
 /* Body Text */
 .body p {
-    display: flex;
-    flex-direction: column;
     font-size: 18pt;
     font-family: sans-serif;
-    margin: 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 .body img {
@@ -49,71 +54,43 @@
     margin: 10px 10px 5px 10px
 }
 
+/* ------------------------------------------------------------------------------------------------ */
+/* The following classes are hacks to provide a way to specify image placement from within markdown */
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Embed image in <p> to float left */
+.body p p {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: auto;
+}
+
+/* Embed image in <div> to float right */
+.body p div {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: auto;
+}
+
+/* Embed image in <h4> for line-breaking images */
+.body h4 {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Add image captions by using em immediately after img
-   Use ![alt](link)*caption* to invoke in markdown */
+   Use [![alt](/path/or/url/ 'mousover')*caption*](link) to invoke in markdown */
 .body img + em {
     color: #333333;
     max-width: 90%;
     font-size: 15pt;
     font-style: italic;
+    font-weight: 500;
     font-family: serif;
     text-align: center;
     margin: 5px 10px 10px 10px;
-}
-
-.posts {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    justify-content: center;
-}
-
-a {
-    text-decoration: none;
-    outline: none;
-}
-
-.card {
-    background: #444444;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 200px;
-    border: 2px solid #333333;
-    border-radius: 8px;
-    margin: 0 20px 20px 20px;
-    box-shadow: 5px 5px 5px -2px #444444;
-    overflow: hidden;
-    text-decoration: none;
-}
-
-.card img {
-    background: black;
-    max-width: 100%;
-    max-height: 140px;
-    object-fit: cover;
-}
-
-.card div {
-    display: flex;
-    flex-direction: column;
-    border-top: 2px solid #333333;
-    padding: 5px 10px 5px 10px;
-}
-
-.card .title {
-    color: white;
-    font-size: 16pt;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-
-.card .date {
-    color: #aaaaaa;
-    font-size: 11pt;
-    font-style: italic;
-    font-family: serif;
 }
 
 /* Desktop/Tablet */
@@ -121,6 +98,13 @@ a {
     .body img {
         max-height: 400px;
         max-width: 400px;
+    }
+    .body p p {
+        margin-right: 10px;
+    }
+    
+    .body p div {
+        margin-left: 10px;
     }
 
     .body img + em {

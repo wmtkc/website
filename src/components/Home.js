@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/Content.css';
 
 const Home = () => {
     return (
-        <div>
-            Home!
+        <div className='content'>
+            <span className='header'>Home</span>
         </div>
     );
 }

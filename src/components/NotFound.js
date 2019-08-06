@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/Content.css';
 
 const NotFound = () => {
     return (
-        <div>
-            Page Not Found
+        <div className='banner'>
+            <span>Content Not Found</span>
         </div>
     );
 }
