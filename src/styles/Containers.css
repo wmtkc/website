@@ -1,6 +1,6 @@
 .page {
     min-height: 100vh;
-    background-image: url('../img/background.png');
+    background-image: url('../../images/background.png');
     background-repeat: repeat;
     overflow: auto;
 }
@@ -10,7 +10,7 @@
     margin: auto;
     padding: 20px;
     justify-content: center;
-    background-image: url('../img/content.png');
+    background-image: url('../../images/content.png');
     background-repeat: repeat;
 }
 
