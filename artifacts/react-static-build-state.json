@@ -1,0 +1,61 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "C:\\Users\\wcasey\\Documents\\personal\\website\\src\\pages"
+      }
+    ],
+    "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static-plugin-react-router\\browser.api.js",
+    "C:\\Users\\wcasey\\Documents\\personal\\website"
+  ],
+  "paths": {
+    "ROOT": "C:\\Users\\wcasey\\Documents\\personal\\website",
+    "SRC": "C:\\Users\\wcasey\\Documents\\personal\\website\\src",
+    "DIST": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist",
+    "ASSETS": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist",
+    "PLUGINS": "C:\\Users\\wcasey\\Documents\\personal\\website\\plugins",
+    "TEMP": "C:\\Users\\wcasey\\Documents\\personal\\website\\tmp",
+    "ARTIFACTS": "C:\\Users\\wcasey\\Documents\\personal\\website\\artifacts",
+    "PUBLIC": "C:\\Users\\wcasey\\Documents\\personal\\website\\public",
+    "NODE_MODULES": "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules",
+    "PACKAGE": "C:\\Users\\wcasey\\Documents\\personal\\website\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist\\staticData"
+  },
+  "siteRoot": "",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

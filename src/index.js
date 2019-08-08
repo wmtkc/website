@@ -1,18 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import CMS from 'netlify-cms';
-import 'babel-polyfill'
-import Page from './components/Page.js';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
 
-CMS.registerPreviewTemplate('my-template', MyTemplate);
+// Your top level component
+import App from './App'
 
-const Index = () => {
-    return (
-        <BrowserRouter>
-            <Page />
-        </BrowserRouter>
-    );
+// Export your top level component as JSX (for static rendering)
+export default App
+
+// Render your app
+if (typeof document !== 'undefined') {
+  const target = document.getElementById('root')
+
+  const renderMethod = target.hasChildNodes()
+    ? ReactDOM.hydrate
+    : ReactDOM.render
+
+  const render = Comp => {
+    renderMethod(
+      <AppContainer>
+        <Comp />
+      </AppContainer>,
+      target
+    )
+  }
+
+  // Render!
+  render(App)
+
+  // Hot Module Replacement
+  if (module && module.hot) {
+    module.hot.accept('./App', () => {
+      render(App)
+    })
+  }
 }
-
-ReactDOM.render(<Index />, document.getElementById('root'));
