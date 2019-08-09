@@ -21,8 +21,10 @@
   "homepage": "https://github.com/wmtkc/website#readme",
   "dependencies": {
     "dateformat": "^3.0.3",
+    "netlify-identity-widget": "^1.5.5",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-hot-loader": "^4.12.10",
     "react-markdown": "^4.1.0",
     "react-router-dom": "^5.0.1",
     "react-static": "^7.0.0",

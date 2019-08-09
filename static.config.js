@@ -1,36 +1,53 @@
-// This file is used to configure:
-// - static-site generation
-// - Document shell (index.html)
-// - ...tons of other things!
-
-// Get started at httsp://react-static.js.org
-
-import Strapi from 'strapi-sdk-javascript'
+import React from 'react'
 import path from 'path'
 
-const cms = 'http://localhost:1337'
-const strapi = new Strapi(cms)
-
 export default {
-  // getRoutes: async () => {
-  //   const { data: posts } = await strapi.getEntries('blogposts')
+  getRoutes: async () => {
+    return [
+      {
+        path: '/',
+        component: 'src/pages/Home',
+      },
+      {
+        path: '/about',
+        component: 'src/pages/About',
+      },
+      // {
+      //   path: '/blog',
+      //   component: 'src/pages/Blog',
+      //   getData: () => ({
+      //     posts,
+      //   }),
+      //   children: posts.map(post => ({
+      //     path: `/blog/${post.id}`,
+      //     component: 'src/containers/BlogPost',
+      //     getData: () => ({
+      //       post,
+      //     }),
+      //   })),
+      // },
+      // {
+      //   is404: true,
+      //   component: 'src/pages/NotFound',
+      // },
+    ]
+  },
+  Document: class CustomHtml extends React.Component {
+    render () {
+      const { Html, Head, Body, children, renderMeta } = this.props
 
-  //   return [
-  //     {
-  //       path: '/blog',
-  //       getData: () => ({
-  //         posts
-  //       }),
-  //       children: posts.map(post => ({
-  //         path: `/blog/${post.url}`,
-  //         template: 'src/components/BlogPost',
-  //         getData: () => ({
-  //           post,
-  //         }),
-  //       })),
-  //     },
-  //   ]
-  // },
+      return (
+        <Html>
+          <Head>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+          </Head>
+          <Body>{children}</Body>
+        </Html>
+      )
+    }
+  },
   plugins: [
     [
       require.resolve('react-static-plugin-source-filesystem'),

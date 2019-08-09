@@ -659,7 +659,7 @@ module.exports = require("dateformat");
 
 exports = module.exports = __webpack_require__(14)(false);
 // Module
-exports.push([module.i, ".banner {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-line-pack: center;\r\n        align-content: center;\r\n    -ms-flex-pack: center;\r\n        justify-content: center;\r\n    font-size: 36pt;\r\n}\r\n\r\n.content {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    width:100%;\r\n}\r\n\r\n.content .header {\r\n    font-size: 28pt;\r\n    font-family: sans-serif;\r\n    margin-left: 20px;\r\n}\r\n\r\n.content em {\r\n    color: #444444;\r\n    font-size: 14pt;\r\n    font-style: italic;\r\n    font-family: serif;\r\n    margin: 5px 20px 10px 20px;\r\n}\r\n\r\n.updated {\r\n    width: 90%;\r\n    display: block;\r\n    text-align: right;\r\n}\r\n\r\n.content .body {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    -ms-flex-align: center;\r\n        align-items: center;\r\n    width: 100%;\r\n}\r\n\r\n/* Body Text */\r\n.body p {\r\n    font-size: 18pt;\r\n    font-family: sans-serif;\r\n    margin: 10px 20px 10px 20px;\r\n}\r\n\r\n.body img {\r\n    max-height: auto;\r\n    max-width: 90%;\r\n    -o-object-fit: scale-down;\r\n       object-fit: scale-down;\r\n    border-radius: 8px;\r\n    -webkit-box-shadow: 5px 5px 5px -2px #444444;\r\n            box-shadow: 5px 5px 5px -2px #444444;\r\n    margin: 10px 10px 5px 10px\r\n}\r\n\r\n/* ------------------------------------------------------------------------------------------------ */\r\n/* The following classes are hacks to provide a way to specify image placement from within markdown */\r\n/* ------------------------------------------------------------------------------------------------ */\r\n\r\n/* Embed image in <p> to float left */\r\n.body p p {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    float: left;\r\n    margin: auto;\r\n}\r\n\r\n/* Embed image in <div> to float right */\r\n.body p div {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    float: right;\r\n    margin: auto;\r\n}\r\n\r\n/* Embed image in <h4> for line-breaking images */\r\n.body h4 {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n}\r\n\r\n/* Add image captions by using em immediately after img\r\n   Use [![alt](/path/or/url/ 'mousover')*caption*](link) to invoke in markdown */\r\n.body img + em {\r\n    color: #333333;\r\n    max-width: 90%;\r\n    font-size: 15pt;\r\n    font-style: italic;\r\n    font-weight: 500;\r\n    font-family: serif;\r\n    text-align: center;\r\n    margin: 5px 10px 10px 10px;\r\n}\r\n\r\n/* Desktop/Tablet */\r\n@media only screen and (min-width : 768px) {\r\n    .body img {\r\n        max-height: 400px;\r\n        max-width: 400px;\r\n    }\r\n    .body p p {\r\n        margin-right: 10px;\r\n    }\r\n    \r\n    .body p div {\r\n        margin-left: 10px;\r\n    }\r\n\r\n    .body img + em {\r\n        max-width: 400px;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".banner {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-line-pack: center;\n        align-content: center;\n    -ms-flex-pack: center;\n        justify-content: center;\n    font-size: 36pt;\n}\n\n.content {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    width:100%;\n}\n\n.content .header {\n    font-size: 28pt;\n    font-family: sans-serif;\n    margin-left: 20px;\n}\n\n.content em {\n    color: #444444;\n    font-size: 14pt;\n    font-style: italic;\n    font-family: serif;\n    margin: 5px 20px 10px 20px;\n}\n\n.updated {\n    width: 90%;\n    display: block;\n    text-align: right;\n}\n\n.content .body {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    -ms-flex-align: center;\n        align-items: center;\n    width: 100%;\n}\n\n/* Body Text */\n.body p {\n    font-size: 18pt;\n    font-family: sans-serif;\n    margin: 10px 20px 10px 20px;\n}\n\n.body img {\n    max-height: auto;\n    max-width: 90%;\n    -o-object-fit: scale-down;\n       object-fit: scale-down;\n    border-radius: 8px;\n    -webkit-box-shadow: 5px 5px 5px -2px #444444;\n            box-shadow: 5px 5px 5px -2px #444444;\n    margin: 10px 10px 5px 10px\n}\n\n/* ------------------------------------------------------------------------------------------------ */\n/* The following classes are hacks to provide a way to specify image placement from within markdown */\n/* ------------------------------------------------------------------------------------------------ */\n\n/* Embed image in <p> to float left */\n.body p p {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    float: left;\n    margin: auto;\n}\n\n/* Embed image in <div> to float right */\n.body p div {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    float: right;\n    margin: auto;\n}\n\n/* Embed image in <h4> for line-breaking images */\n.body h4 {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n}\n\n/* Add image captions by using em immediately after img\n   Use [![alt](/path/or/url/ 'mousover')*caption*](link) to invoke in markdown */\n.body img + em {\n    color: #333333;\n    max-width: 90%;\n    font-size: 15pt;\n    font-style: italic;\n    font-weight: 500;\n    font-family: serif;\n    text-align: center;\n    margin: 5px 10px 10px 10px;\n}\n\n/* Desktop/Tablet */\n@media only screen and (min-width : 768px) {\n    .body img {\n        max-height: 400px;\n        max-width: 400px;\n    }\n    .body p p {\n        margin-right: 10px;\n    }\n    \n    .body p div {\n        margin-left: 10px;\n    }\n\n    .body img + em {\n        max-width: 400px;\n    }\n}", ""]);
 
 
 
@@ -860,8 +860,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_Content_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _styles_Content_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_Content_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(43);
-/* harmony import */ var _images_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _public_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(43);
+/* harmony import */ var _public_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -874,7 +874,7 @@ var About = function About() {
   }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    src: _public_uploads_sailboat_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "sailboat"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Would it get some wind for the sailboat?")));
 };
@@ -956,10 +956,10 @@ var external_strapi_sdk_javascript_default = /*#__PURE__*/__webpack_require__.n(
 var external_dateformat_ = __webpack_require__(10);
 var external_dateformat_default = /*#__PURE__*/__webpack_require__.n(external_dateformat_);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/styles/BlogList.css
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/styles/BlogList.css
 var styles_BlogList = __webpack_require__(35);
 
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/components/PostCard.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/components/PostCard.js
 
 
 
@@ -1002,11 +1002,11 @@ function (_React$Component) {
 }(external_react_default.a.Component);
 
 /* harmony default export */ var components_PostCard = (PostCard_PostCard);
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/images/no-cover.jpg
+// EXTERNAL MODULE: /home/wtkc/Projects/website/public/uploads/no-cover.jpg
 var no_cover = __webpack_require__(41);
 var no_cover_default = /*#__PURE__*/__webpack_require__.n(no_cover);
 
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/components/BlogList.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/components/BlogList.js
 
 
 
@@ -1111,13 +1111,13 @@ function (_React$Component) {
 var external_react_markdown_ = __webpack_require__(42);
 var external_react_markdown_default = /*#__PURE__*/__webpack_require__.n(external_react_markdown_);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/styles/Content.css
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/styles/Content.css
 var Content = __webpack_require__(11);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/pages/NotFound.js
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/pages/NotFound.js
 var NotFound = __webpack_require__(17);
 
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/containers/BlogPost.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/containers/BlogPost.js
 
 
 
@@ -1240,7 +1240,7 @@ function (_React$Component) {
 }(external_react_default.a.Component);
 
 /* harmony default export */ var containers_BlogPost = (BlogPost_BlogPost);
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/pages/Blog.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/pages/Blog.js
 
 
 
@@ -1325,10 +1325,10 @@ var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_)
 // EXTERNAL MODULE: external "react-router-dom"
 var external_react_router_dom_ = __webpack_require__(1);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/styles/Navbar.css
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/styles/Navbar.css
 var styles_Navbar = __webpack_require__(60);
 
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/components/Navbar.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/components/Navbar.js
 
 
 
@@ -1397,25 +1397,25 @@ function (_React$Component) {
 }(external_react_default.a.Component);
 
 /* harmony default export */ var components_Navbar = (Navbar_Navbar);
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/styles/Containers.css
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/styles/Containers.css
 var Containers = __webpack_require__(28);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/pages/Home.js
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/pages/Home.js
 var Home = __webpack_require__(15);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/pages/Projects.js
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/pages/Projects.js
 var Projects = __webpack_require__(16);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/pages/Blog.js + 3 modules
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/pages/Blog.js + 3 modules
 var Blog = __webpack_require__(20);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/pages/About.js
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/pages/About.js
 var About = __webpack_require__(18);
 
-// EXTERNAL MODULE: C:/Users/wcasey/Documents/personal/website/src/pages/Contact.js
+// EXTERNAL MODULE: /home/wtkc/Projects/website/src/pages/Contact.js
 var Contact = __webpack_require__(19);
 
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/containers/Content.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/containers/Content.js
 
 
  // import pages
@@ -1449,7 +1449,7 @@ var Content_Content = function Content() {
 };
 
 /* harmony default export */ var containers_Content = (Content_Content);
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/containers/Page.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/containers/Page.js
 
 
 
@@ -1462,7 +1462,7 @@ var Page_Page = function Page() {
 };
 
 /* harmony default export */ var containers_Page = (Page_Page);
-// CONCATENATED MODULE: C:/Users/wcasey/Documents/personal/website/src/App.js
+// CONCATENATED MODULE: /home/wtkc/Projects/website/src/App.js
 
 
  // import CMS from 'netlify-cms';
@@ -1689,7 +1689,7 @@ var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(62));
 var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(63));
 
 // Module
-exports.push([module.i, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\r\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\r\n    sans-serif;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\r\n    monospace;\r\n}\r\n\r\n.page {\r\n    min-height: 100vh;\r\n    background-image: url(" + ___CSS_LOADER_URL___0___ + ");\r\n    background-repeat: repeat;\r\n    overflow: auto;\r\n}\r\n\r\n.page .content-wrapper {\r\n    min-height: auto;\r\n    margin: auto;\r\n    padding: 20px;\r\n    -ms-flex-pack: center;\r\n        justify-content: center;\r\n    background-image: url(" + ___CSS_LOADER_URL___1___ + ");\r\n    background-repeat: repeat;\r\n}\r\n\r\n/* Tablet/Desktop */\r\n@media only screen and (min-width : 768px) {\r\n    .page .content-wrapper {\r\n        min-height: 600px;\r\n        width: 50%;\r\n        padding: 50px;\r\n        margin-bottom: 100px;\r\n        border-right: 4px solid #333333;\r\n        border-bottom: 4px solid #333333;\r\n        border-left: 4px solid #333333;\r\n        -webkit-box-shadow: 5px 5px 10px 5px #444444;\r\n                box-shadow: 5px 5px 10px 5px #444444;\r\n    }\r\n}", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.page {\n    min-height: 100vh;\n    background-image: url(" + ___CSS_LOADER_URL___0___ + ");\n    background-repeat: repeat;\n    overflow: auto;\n}\n\n.page .content-wrapper {\n    min-height: auto;\n    margin: auto;\n    padding: 20px;\n    -ms-flex-pack: center;\n        justify-content: center;\n    background-image: url(" + ___CSS_LOADER_URL___1___ + ");\n    background-repeat: repeat;\n}\n\n/* Tablet/Desktop */\n@media only screen and (min-width : 768px) {\n    .page .content-wrapper {\n        min-height: 600px;\n        width: 50%;\n        padding: 50px;\n        margin-bottom: 100px;\n        border-right: 4px solid #333333;\n        border-bottom: 4px solid #333333;\n        border-left: 4px solid #333333;\n        -webkit-box-shadow: 5px 5px 10px 5px #444444;\n                box-shadow: 5px 5px 10px 5px #444444;\n    }\n}", ""]);
 
 
 
@@ -1734,7 +1734,7 @@ var plugins = [{
 /* 31 */
 /***/ (function(module, exports) {
 
-module.exports = require("C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static\\lib\\browser");
+module.exports = require("/home/wtkc/Projects/website/node_modules/react-static/lib/browser");
 
 /***/ }),
 /* 32 */
@@ -1749,8 +1749,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
-/* harmony import */ var C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
+/* harmony import */ var _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -1767,7 +1767,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__["setHasBabelPlugin"])();
+Object(_home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__["setHasBabelPlugin"])();
 var universalOptions = {
   loading: function loading() {
     return null;
@@ -1778,7 +1778,7 @@ var universalOptions = {
   },
   ignoreBabelRename: true
 };
-var t_0 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+var t_0 = _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../node_modules/react-static/lib/browser/components/Default404",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 36, 7))]).then(function (proms) {
@@ -1796,7 +1796,7 @@ var t_0 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal
   }
 }), universalOptions);
 t_0.template = '../node_modules/react-static/lib/browser/components/Default404';
-var t_1 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+var t_1 = _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../src/pages/About.js",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 18))]).then(function (proms) {
@@ -1814,7 +1814,7 @@ var t_1 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal
   }
 }), universalOptions);
 t_1.template = '../src/pages/About.js';
-var t_2 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+var t_2 = _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../src/pages/Blog.js",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 20))]).then(function (proms) {
@@ -1832,7 +1832,7 @@ var t_2 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal
   }
 }), universalOptions);
 t_2.template = '../src/pages/Blog.js';
-var t_3 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+var t_3 = _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../src/pages/Contact.js",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 19))]).then(function (proms) {
@@ -1850,7 +1850,7 @@ var t_3 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal
   }
 }), universalOptions);
 t_3.template = '../src/pages/Contact.js';
-var t_4 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+var t_4 = _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../src/pages/Home.js",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 15))]).then(function (proms) {
@@ -1868,7 +1868,7 @@ var t_4 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal
   }
 }), universalOptions);
 t_4.template = '../src/pages/Home.js';
-var t_5 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+var t_5 = _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../src/pages/NotFound.js",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 17))]).then(function (proms) {
@@ -1886,7 +1886,7 @@ var t_5 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal
   }
 }), universalOptions);
 t_5.template = '../src/pages/NotFound.js';
-var t_6 = C_Users_wcasey_Documents_personal_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+var t_6 = _home_wtkc_Projects_website_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "../src/pages/Projects.js",
   load: function load() {
     return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 16))]).then(function (proms) {
@@ -1936,7 +1936,7 @@ module.exports = require("hoist-non-react-statics");
 
 exports = module.exports = __webpack_require__(14)(false);
 // Module
-exports.push([module.i, ".posts {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: row;\r\n        flex-direction: row;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n    -ms-flex-pack: center;\r\n        justify-content: center;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    outline: none;\r\n}\r\n\r\n.card {\r\n    background: #444444;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    width: 200px;\r\n    height: 200px;\r\n    border: 2px solid #333333;\r\n    border-radius: 8px;\r\n    margin: 0 20px 20px 20px;\r\n    -webkit-box-shadow: 5px 5px 5px -2px #444444;\r\n            box-shadow: 5px 5px 5px -2px #444444;\r\n    overflow: hidden;\r\n    text-decoration: none;\r\n}\r\n\r\n.card img {\r\n    background: black;\r\n    max-width: 100%;\r\n    max-height: 140px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n}\r\n\r\n.card div {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    border-top: 2px solid #333333;\r\n    padding: 5px 10px 5px 10px;\r\n}\r\n\r\n.card .title {\r\n    color: white;\r\n    font-size: 16pt;\r\n    font-family: sans-serif;\r\n    text-decoration: none;\r\n}\r\n\r\n.card .date {\r\n    color: #aaaaaa;\r\n    font-size: 11pt;\r\n    font-style: italic;\r\n    font-family: serif;\r\n}", ""]);
+exports.push([module.i, ".posts {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: row;\n        flex-direction: row;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -ms-flex-pack: center;\n        justify-content: center;\n}\n\na {\n    text-decoration: none;\n    outline: none;\n}\n\n.card {\n    background: #444444;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    width: 200px;\n    height: 200px;\n    border: 2px solid #333333;\n    border-radius: 8px;\n    margin: 0 20px 20px 20px;\n    -webkit-box-shadow: 5px 5px 5px -2px #444444;\n            box-shadow: 5px 5px 5px -2px #444444;\n    overflow: hidden;\n    text-decoration: none;\n}\n\n.card img {\n    background: black;\n    max-width: 100%;\n    max-height: 140px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n\n.card div {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    border-top: 2px solid #333333;\n    padding: 5px 10px 5px 10px;\n}\n\n.card .title {\n    color: white;\n    font-size: 16pt;\n    font-family: sans-serif;\n    text-decoration: none;\n}\n\n.card .date {\n    color: #aaaaaa;\n    font-size: 11pt;\n    font-style: italic;\n    font-family: serif;\n}", ""]);
 
 
 
@@ -1944,7 +1944,7 @@ exports.push([module.i, ".posts {\r\n    display: -ms-flexbox;\r\n    display: f
 /* 36 */
 /***/ (function(module, exports) {
 
-module.exports = require("C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static\\lib\\browser\\components\\Default404");
+module.exports = require("/home/wtkc/Projects/website/node_modules/react-static/lib/browser/components/Default404");
 
 /***/ }),
 /* 37 */
@@ -2098,7 +2098,7 @@ var _require = __webpack_require__(31),
 registerPlugins(plugins);
 
 if (typeof document !== 'undefined' && module && module.hot) {
-  module.hot.accept("C:\\Users\\wcasey\\Documents\\personal\\website\\artifacts\\react-static-browser-plugins.js", function () {
+  module.hot.accept("/home/wtkc/Projects/website/artifacts/react-static-browser-plugins.js", function () {
     registerPlugins(__webpack_require__(30)["default"]);
   });
 }
@@ -2122,7 +2122,7 @@ var _require2 = __webpack_require__(32),
 registerTemplates(templates, notFoundTemplate);
 
 if (typeof document !== 'undefined' && module && module.hot) {
-  module.hot.accept("C:\\Users\\wcasey\\Documents\\personal\\website\\artifacts\\react-static-templates.js", function () {
+  module.hot.accept("/home/wtkc/Projects/website/artifacts/react-static-templates.js", function () {
     var _require3 = __webpack_require__(32),
         templates = _require3["default"],
         notFoundTemplate = _require3.notFoundTemplate;
@@ -2639,7 +2639,7 @@ module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 /* 57 */
 /***/ (function(module, exports) {
 
-module.exports = require("C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
+module.exports = require("/home/wtkc/Projects/website/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
 /* 58 */
@@ -2676,6 +2676,17 @@ if (typeof document !== 'undefined') {
   if (module && module.hot) {
     module.hot.accept('./App', function () {
       render(_App__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"]);
+    });
+  } //Netlify Redirect
+
+
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', function (user) {
+      if (!user) {
+        window.netlifyIdentity.on('login', function () {
+          document.location.href = '/admin/';
+        });
+      }
     });
   }
 }
@@ -2717,7 +2728,7 @@ module.exports = function (originalModule) {
 
 exports = module.exports = __webpack_require__(14)(false);
 // Module
-exports.push([module.i, ".nav-wrapper {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    background: #f0f0f0;\r\n    border-bottom: 4px solid #333333;\r\n    -webkit-box-shadow: 5px 0 5px 2px #444444;\r\n            box-shadow: 5px 0 5px 2px #444444;\r\n}\r\n\r\n.navbar {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: row;\r\n        flex-direction: row;\r\n    height: 220px;\r\n    width: 100%;\r\n    -ms-flex-pack: justify;\r\n        justify-content: space-between;\r\n    -ms-flex-align: center;\r\n        align-items: center;\r\n    overflow: hidden;\r\n    -webkit-transition: height 0.25s ease;\r\n    -o-transition: height 0.25s ease;\r\n    transition: height 0.25s ease;\r\n}\r\n\r\n.collapsed {\r\n    visibility: hidden;\r\n    height: 0;\r\n    overflow: hidden;\r\n    -webkit-transition: height 0.25s ease;\r\n    -o-transition: height 0.25s ease;\r\n    transition: height 0.25s ease;\r\n}\r\n\r\n.navbar div {\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    margin: 20px 0 20px 0;\r\n    text-align: center;\r\n}\r\n\r\n.navbar .icon {\r\n    line-height: 30px;\r\n    margin: 20px;\r\n}\r\n\r\n.navbar a {\r\n    color: #444444;\r\n    padding-bottom: 2px;\r\n    margin: 5px 20px 3px 20px;\r\n    font-size: 18pt;\r\n    font-family: sans-serif;\r\n    text-decoration: none;\r\n    border-bottom: 4px solid transparent;\r\n    outline: none;\r\n}\r\n\r\n.navbar .active {\r\n    border-bottom: 4px solid #444444;\r\n}\r\n\r\n.navbar .desktop-only {\r\n    visibility: hidden;\r\n    height: 0;\r\n    width: 0;\r\n}\r\n\r\n.menu-toggle {\r\n    visibility: visible;\r\n    background: grey;\r\n    font-size: 24pt;\r\n    font-family: sans-serif;\r\n    text-decoration: none;\r\n    text-align: center;\r\n}\r\n\r\n/* Tablet/Desktop */\r\n@media only screen and (min-width : 768px) {\r\n    .nav-wrapper {\r\n        position: -webkit-sticky;\r\n        position: sticky;\r\n        top: 0;\r\n    }\r\n\r\n    .navbar {\r\n        height: auto;\r\n    }\r\n\r\n    .navbar div {\r\n        -ms-flex-direction: row;\r\n            flex-direction: row;\r\n    }\r\n\r\n    .navbar .desktop-only {\r\n        visibility: visible;\r\n        height: auto;\r\n        width: auto;\r\n    }\r\n\r\n    .menu-toggle {\r\n        visibility: hidden;\r\n        height: 0;\r\n        width: 0;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".nav-wrapper {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    background: #f0f0f0;\n    border-bottom: 4px solid #333333;\n    -webkit-box-shadow: 5px 0 5px 2px #444444;\n            box-shadow: 5px 0 5px 2px #444444;\n}\n\n.navbar {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: row;\n        flex-direction: row;\n    height: 220px;\n    width: 100%;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    -ms-flex-align: center;\n        align-items: center;\n    overflow: hidden;\n    -webkit-transition: height 0.25s ease;\n    -o-transition: height 0.25s ease;\n    transition: height 0.25s ease;\n}\n\n.collapsed {\n    visibility: hidden;\n    height: 0;\n    overflow: hidden;\n    -webkit-transition: height 0.25s ease;\n    -o-transition: height 0.25s ease;\n    transition: height 0.25s ease;\n}\n\n.navbar div {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-direction: column;\n        flex-direction: column;\n    margin: 20px 0 20px 0;\n    text-align: center;\n}\n\n.navbar .icon {\n    line-height: 30px;\n    margin: 20px;\n}\n\n.navbar a {\n    color: #444444;\n    padding-bottom: 2px;\n    margin: 5px 20px 3px 20px;\n    font-size: 18pt;\n    font-family: sans-serif;\n    text-decoration: none;\n    border-bottom: 4px solid transparent;\n    outline: none;\n}\n\n.navbar .active {\n    border-bottom: 4px solid #444444;\n}\n\n.navbar .desktop-only {\n    visibility: hidden;\n    height: 0;\n    width: 0;\n}\n\n.menu-toggle {\n    visibility: visible;\n    background: grey;\n    font-size: 24pt;\n    font-family: sans-serif;\n    text-decoration: none;\n    text-align: center;\n}\n\n/* Tablet/Desktop */\n@media only screen and (min-width : 768px) {\n    .nav-wrapper {\n        position: -webkit-sticky;\n        position: sticky;\n        top: 0;\n    }\n\n    .navbar {\n        height: auto;\n    }\n\n    .navbar div {\n        -ms-flex-direction: row;\n            flex-direction: row;\n    }\n\n    .navbar .desktop-only {\n        visibility: visible;\n        height: auto;\n        width: auto;\n    }\n\n    .menu-toggle {\n        visibility: hidden;\n        height: 0;\n        width: 0;\n    }\n}", ""]);
 
 
 

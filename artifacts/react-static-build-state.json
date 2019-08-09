@@ -15,29 +15,29 @@
   "entry": "index.js",
   "plugins": [
     [
-      "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      "/home/wtkc/Projects/website/node_modules/react-static-plugin-source-filesystem/node.api.js",
       {
-        "location": "C:\\Users\\wcasey\\Documents\\personal\\website\\src\\pages"
+        "location": "/home/wtkc/Projects/website/src/pages"
       }
     ],
-    "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
-    "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules\\react-static-plugin-react-router\\browser.api.js",
-    "C:\\Users\\wcasey\\Documents\\personal\\website"
+    "/home/wtkc/Projects/website/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/home/wtkc/Projects/website/node_modules/react-static-plugin-react-router/browser.api.js",
+    "/home/wtkc/Projects/website"
   ],
   "paths": {
-    "ROOT": "C:\\Users\\wcasey\\Documents\\personal\\website",
-    "SRC": "C:\\Users\\wcasey\\Documents\\personal\\website\\src",
-    "DIST": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist",
-    "ASSETS": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist",
-    "PLUGINS": "C:\\Users\\wcasey\\Documents\\personal\\website\\plugins",
-    "TEMP": "C:\\Users\\wcasey\\Documents\\personal\\website\\tmp",
-    "ARTIFACTS": "C:\\Users\\wcasey\\Documents\\personal\\website\\artifacts",
-    "PUBLIC": "C:\\Users\\wcasey\\Documents\\personal\\website\\public",
-    "NODE_MODULES": "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules",
-    "EXCLUDE_MODULES": "C:\\Users\\wcasey\\Documents\\personal\\website\\node_modules",
-    "PACKAGE": "C:\\Users\\wcasey\\Documents\\personal\\website\\package.json",
-    "HTML_TEMPLATE": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist\\index.html",
-    "STATIC_DATA": "C:\\Users\\wcasey\\Documents\\personal\\website\\dist\\staticData"
+    "ROOT": "/home/wtkc/Projects/website",
+    "SRC": "/home/wtkc/Projects/website/src",
+    "DIST": "/home/wtkc/Projects/website/dist",
+    "ASSETS": "/home/wtkc/Projects/website/dist",
+    "PLUGINS": "/home/wtkc/Projects/website/plugins",
+    "TEMP": "/home/wtkc/Projects/website/tmp",
+    "ARTIFACTS": "/home/wtkc/Projects/website/artifacts",
+    "PUBLIC": "/home/wtkc/Projects/website/public",
+    "NODE_MODULES": "/home/wtkc/Projects/website/node_modules",
+    "EXCLUDE_MODULES": "/home/wtkc/Projects/website/node_modules",
+    "PACKAGE": "/home/wtkc/Projects/website/package.json",
+    "HTML_TEMPLATE": "/home/wtkc/Projects/website/dist/index.html",
+    "STATIC_DATA": "/home/wtkc/Projects/website/dist/staticData"
   },
   "siteRoot": "",
   "basePath": "",

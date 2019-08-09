@@ -3,7 +3,7 @@ import Strapi from 'strapi-sdk-javascript';
 import dateFormat from 'dateformat';
 import PostCard from './PostCard';
 import '../styles/BlogList.css';
-import noCover from '../../images/no-cover.jpg';
+import noCover from '../../public/uploads/no-cover.jpg';
 
 const cms = 'http://localhost:1337';
 const strapi = new Strapi(cms);
