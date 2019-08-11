@@ -18,16 +18,20 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "URL", name: "url", widget: "string"}
+      - {label: "Published", name: "published", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Updated", name: "update", widget: "datetime", required: false}
+      - {label: "Updated", name: "update", widget: "datetime", required: false, default: ""}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "relation", collection: "tags", searchFields: "value", valueField: "value", multiple: true}
+      - {label: "Tags", name: "tags", widget: "relation", collection: "tags", searchFields: ["value"], valueField: "value", displayFields: ["value"], multiple: true, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "tags"
     label: "Tags"
+    identifier_field: "value"
     folder: "public/tags"
     create: true
     slug: "{{value}}"
+    editor:
+      preview: false
     fields:
       - {label: "Value", name: "value", widget: "string"}
-      - {label: "Blogposts", name: "blogposts", widget: "relation", collection: "blogposts", searchFields: "title", valueField: "title", displayFields: ["title", "date"], required: false}
+      - {label: "Blogposts", name: "blogposts", widget: "relation", collection: "blogposts", searchFields: ["title"], valueField: "url", displayFields: ["date", "title"], required: false, multiple: true}

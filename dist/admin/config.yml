@@ -21,7 +21,11 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Updated", name: "update", widget: "datetime", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "relation", collection: "tags", searchFields: "value", valueField: "value", multiple: true}
+      # - {label: "Tags", name: "tags", widget: "relation", collection: "tags", searchFields: ["value"], valueField: "value", displayFields: ["value"]}
+      # - label: "Tags"
+      #   name: "tags"
+      #   widget: "list"
+      #   field: {label: "Value", name: "value", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "tags"
     label: "Tags"
@@ -30,4 +34,4 @@ collections:
     slug: "{{value}}"
     fields:
       - {label: "Value", name: "value", widget: "string"}
-      - {label: "Blogposts", name: "blogposts", widget: "relation", collection: "blogposts", searchFields: "title", valueField: "title", displayFields: ["title", "date"], required: false}
+      - {label: "Blogposts", name: "blogposts", widget: "relation", collection: "blogposts", searchFields: ["title"], valueField: "url", displayFields: ["title", "date"], required: false}
