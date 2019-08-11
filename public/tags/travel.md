@@ -1,4 +1,6 @@
 ---
 value: Travel
+blogposts:
+  - test
 ---
 
