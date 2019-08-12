@@ -1,53 +1,31 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import { useRouteData } from 'react-static';
+import Markdown from 'react-markdown';
 import dateFormat from 'dateformat';
 import '../styles/Content.css';
 
-import NotFound from '../pages/NotFound.js';
+import NotFound from '../pages/404.js';
 
-
-class BlogPost extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            url: this.props.match.params.postURL,
-            title: 'Title',
-            body: 'Lorem Ipsum',
-            date: '',
-            updated: '',
-            published: true,
-            loaded: true
-        };
-    }
-
-    render() {
-        return (
-            <React.Fragment>
-                {this.state.published ? (
-                    <div className='content'>
-                        <span className='header'>{this.state.title}</span>
-                        <em>{dateFormat(this.state.date, 'mmmm dS, yyyy')}</em>
-                        <ReactMarkdown className='body' source={this.state.body} escapeHtml={false} />
-
-                        {/* Display update timestamp if updated more than 24hrs after creation */}
-                        <em className='updated'>
-                            {dateFormat(this.state.updated, 'yyyymmddHH')- dateFormat(this.state.date, 'yyyymmddHH') > 24 ? 'Updated: ' + dateFormat(this.state.updated, 'mmmm dS, yyyy') : ''}
-                        </em>
-                    </div>
-                ) : (
-                    <React.Fragment>
-                        {/* If no longer loading and not published, set NotFound */}
-                        {this.state.loaded ? (
-                            <NotFound />
-                        ) : (
-                            // TODO: Make loading animation
-                            <span>Loading</span>
-                        )}
-                    </React.Fragment>
-                )}
-            </React.Fragment>
-        );
-    }
+// TODO: ADD ROUTE DATA
+const BlogPost = () => {
+    const { post } = useRouteData();
+    return (
+        <React.Fragment>
+            {post.data.published ? (
+                <div className='content'>
+                    <span className='header'>{post.data.title}</span>
+                    <em>{dateFormat(post.data.date, 'mmmm dS, yyyy')}</em>
+                    <Markdown className='body' source={post.content} escapeHtml={false} />
+                    {/* Display update timestamp if updated more than 24hrs after published */}
+                    <em className='updated'>
+                        {dateFormat(post.data.update, 'yyyymmddHH')- dateFormat(post.data.date, 'yyyymmddHH') > 24 ? 'Updated: ' + dateFormat(post.data.date, 'mmmm dS, yyyy') : ''}
+                    </em>
+                </div>
+            ) : (
+                <NotFound />
+            )}
+        </React.Fragment>
+    );
 }
 
 export default BlogPost;

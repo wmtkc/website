@@ -51,37 +51,17 @@ export default {
     const posts = await getPosts();
     return [
       {
-        path: '/',
-        template: './src/pages/Home.js'
-      },
-      {
-        path: '/about',
-        template: './src/pages/About'
-      },
-      {
-        path: '/projects',
-        template: './src/pages/Projects'
-      },
-      {
-        path: '/contact',
-        template: './src/pages/Contact'
-      },
-      {
         path: '/blog',
-        template: './src/components/BlogList',
         getData: async () => ({
           posts,
         }),
         children: posts.map(post => ({
-          path: `/blog/${post.data.slug}`,
+          path: `/${post.data.slug}`,
+          template: 'src/containers/BlogPost',
           getData: async () => ({
             post,
           }),
         })),
-      },
-      {
-        path: 404,
-        template: './src/pages/NotFound',
       },
     ]
   },
@@ -102,12 +82,12 @@ export default {
     }
   },
   plugins: [
-    // [
-    //   require.resolve('react-static-plugin-source-filesystem'),
-    //   {
-    //     location: path.resolve('./src/pages')
-    //   }
-    // ],
+    [
+      require.resolve('react-static-plugin-source-filesystem'),
+      {
+        location: path.resolve('./src/pages')
+      }
+    ],
     require.resolve('react-static-plugin-sitemap'),
     require.resolve('react-static-plugin-react-router')
   ],

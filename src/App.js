@@ -1,15 +1,19 @@
 import React from 'react';
-import { Root } from 'react-static';
-// import CMS from 'netlify-cms';
-// import 'babel-polyfill'
-import Page from './containers/Page.js';
+import { Root, Routes } from 'react-static';
+import Navbar from './components/Navbar'
 import './styles/Containers.css'
-// CMS.registerPreviewTemplate('my-template', MyTemplate);
 
 const App = () => {
     return (
         <Root>
-            <Page />
+            <div className='page'>
+                <Navbar />
+                <div className='content-wrapper'>
+                    <React.Suspense fallback={<em>Loading...</em>}>
+                        <Routes />
+                    </React.Suspense>
+                </div>
+            </div>
         </Root>
     );
 }

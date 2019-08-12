@@ -1,18 +1,47 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import dateFormat from 'dateformat';
+import PostCard from '../components/PostCard';
+import '../styles/BlogList.css';
+import noCover from '../../public/uploads/no-cover.jpg';
+import { useRouteData } from 'react-static';
 
-import BlogList from '../components/BlogList.js';
-import BlogPost from '../containers/BlogPost.js';
-
-const Blog = ({ match }) => {
+const BlogList = () => {
+    const { posts } = useRouteData();
+    const cards = [];
+    posts.forEach((post, index) => {
+        if (post.data.published) {
+            cards.push(<PostCard key={index}
+                                 url={post.data.url}
+                                 title={post.data.title} 
+                                 coverImg={post.data.thumbnail ? post.data.thumbnail : noCover} 
+                                 date={dateFormat(post.data.date, 'mmmm dS, yyyy')} />)
+        }
+    });
     return (
-        <React.Suspense fallback={<em>Loading...</em>}>
-        <Switch>
-            <Route exact path={match.path} component={BlogList} />
-            <Route path={`${match.path}/:postURL`} component={BlogPost} />
-        </Switch>
-        </React.Suspense>
+        <div className='posts'>
+            {cards}
+        </div>
     );
 }
 
-export default Blog;
+export default BlogList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
