@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { Routes } from 'react-static';
 import '../styles/Containers.css';
 
 // import pages
@@ -12,6 +13,7 @@ import Contact from '../pages/Contact.js';
 const Content = () => {
     return (
         <div className='content-wrapper'>
+            {/* <Routes /> */}
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/projects' component={Projects} />

@@ -1,47 +1,27 @@
 import React from 'react';
-import Strapi from 'strapi-sdk-javascript';
 import dateFormat from 'dateformat';
 import PostCard from './PostCard';
 import '../styles/BlogList.css';
 import noCover from '../../public/uploads/no-cover.jpg';
+import { useRouteData } from 'react-static';
 
-const cms = 'http://localhost:1337';
-const strapi = new Strapi(cms);
-
-class BlogList extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            posts: []
+const BlogList = () => {
+    const { posts } = useRouteData();
+    const cards = [];
+    posts.forEach((post, index) => {
+        if (post.published) {
+            cards.push(<PostCard key={index}
+                                 url={post.data.url}
+                                 title={post.data.title} 
+                                 coverImg={post.data.thumbnail ? post.data.thumbnail : noCover} 
+                                 date={dateFormat(post.data.date, 'mmmm dS, yyyy')} />)
         }
-    }
-    
-    async componentDidMount () {
-        try {
-            const posts = await strapi.getEntries('blogposts');
-            this.setState({ posts });
-        } catch (err) {
-            console.error(err);
-        }
-    }
-
-    render () {
-        const cards = [];
-        this.state.posts.forEach((post) => {
-            if (post.published) {
-                cards.push(<PostCard key={post.id}
-                                     url={post.url}
-                                     title={post.title} 
-                                     coverImg={post.cover ? cms + post.cover.url : noCover} 
-                                     date={dateFormat(post.created_at, 'mmmm dS, yyyy')} />)
-            }
-        });
-        return (
-            <div className='posts'>
-                {cards}
-            </div>
-        );
-    }
+    });
+    return (
+        <div className='posts'>
+            {cards}
+        </div>
+    );
 }
 
 export default BlogList;

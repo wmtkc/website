@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Root } from 'react-static';
 // import CMS from 'netlify-cms';
 // import 'babel-polyfill'

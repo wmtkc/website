@@ -3,14 +3,16 @@ import path from 'path'
 import fs from 'fs'
 import klaw from 'klaw'
 import matter from 'gray-matter'
+import axios from 'axios'
 
 function getPosts () {
+  console.log("GETTING POSTS")
   const items = []
   // Walk ("klaw") through posts directory and push file paths into items array //
   const getFiles = () => new Promise(resolve => {
     // Check if posts directory exists //
-    if (fs.existsSync('./src/posts')) {
-      klaw('./src/posts')
+    if (fs.existsSync('public/posts')) {
+      klaw('public/posts')
         .on('data', item => {
           // Filter function to retrieve .md files //
           if (path.extname(item.path) === '.md') {
@@ -34,8 +36,10 @@ function getPosts () {
           // posts = items for below routes //
           resolve(items)
         })
+        console.log("POSTS RETRIEVED")
     } else {
       // If src/posts directory doesn't exist, return items as empty array //
+      console.log("NO POSTS FOUND")
       resolve(items)
     }
   })
@@ -48,38 +52,37 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/pages/Home',
+        template: './src/pages/Home.js'
       },
       {
         path: '/about',
-        component: 'src/pages/About',
+        template: './src/pages/About'
       },
       {
         path: '/projects',
-        component: 'src/pages/Projects'
+        template: './src/pages/Projects'
       },
       {
         path: '/contact',
-        component: 'src/pages/contact'
+        template: './src/pages/Contact'
       },
       {
         path: '/blog',
-        component: 'src/pages/Blog',
-        getData: () => ({
+        template: './src/components/BlogList',
+        getData: async () => ({
           posts,
         }),
         children: posts.map(post => ({
           path: `/blog/${post.data.slug}`,
-          component: 'src/containers/BlogPost',
-          getData: () => ({
+          getData: async () => ({
             post,
           }),
         })),
       },
-      // {
-      //   is404: true,
-      //   component: 'src/pages/NotFound',
-      // },
+      {
+        path: 404,
+        template: './src/pages/NotFound',
+      },
     ]
   },
   Document: class CustomHtml extends React.Component {
@@ -99,13 +102,21 @@ export default {
     }
   },
   plugins: [
-    [
-      require.resolve('react-static-plugin-source-filesystem'),
-      {
-        location: path.resolve('./src/pages')
-      }
-    ],
+    // [
+    //   require.resolve('react-static-plugin-source-filesystem'),
+    //   {
+    //     location: path.resolve('./src/pages')
+    //   }
+    // ],
     require.resolve('react-static-plugin-sitemap'),
     require.resolve('react-static-plugin-react-router')
-  ]
+  ],
+  webpack: (config, { stage }) => {
+    if (stage === 'prod') {
+      config.entry = ['babel-polyfill', config.entry]
+    } else if (stage === 'dev') {
+      config.entry = ['babel-polyfill', ...config.entry]
+    }
+    return config
+  },
 }

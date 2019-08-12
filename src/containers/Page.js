@@ -7,7 +7,9 @@ const Page = () => {
     return (
         <div className='page'>
             <Navbar />
-            <Content />
+            <React.Suspense fallback={<em>Loading...</em>}>
+                <Content />
+            </React.Suspense>
         </div>
     );
 }
