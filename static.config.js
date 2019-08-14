@@ -3,10 +3,9 @@ import path from 'path'
 import fs from 'fs'
 import klaw from 'klaw'
 import matter from 'gray-matter'
-import axios from 'axios'
 
 function getPosts () {
-  console.log("GETTING POSTS")
+  console.log("Getting posts...")
   const items = []
   // Walk ("klaw") through posts directory and push file paths into items array //
   const getFiles = () => new Promise(resolve => {
@@ -36,7 +35,6 @@ function getPosts () {
           // posts = items for below routes //
           resolve(items)
         })
-        console.log("POSTS RETRIEVED")
     } else {
       // If src/posts directory doesn't exist, return items as empty array //
       console.log("NO POSTS FOUND")
@@ -65,10 +63,10 @@ export default {
       },
     ]
   },
+
   Document: class CustomHtml extends React.Component {
     render() {
       const { Html, Head, Body, children } = this.props
-
       return (
         <Html>
           <Head>
@@ -81,6 +79,7 @@ export default {
       )
     }
   },
+
   plugins: [
     [
       require.resolve('react-static-plugin-source-filesystem'),
@@ -91,6 +90,8 @@ export default {
     require.resolve('react-static-plugin-sitemap'),
     require.resolve('react-static-plugin-react-router')
   ],
+
+  // Browser Compatibility
   webpack: (config, { stage }) => {
     if (stage === 'prod') {
       config.entry = ['babel-polyfill', config.entry]

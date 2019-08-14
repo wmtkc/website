@@ -18,7 +18,7 @@ const BlogPost = () => {
                     <Markdown className='body' source={post.content} escapeHtml={false} />
                     {/* Display update timestamp if updated more than 24hrs after published */}
                     <em className='updated'>
-                        {dateFormat(post.data.update, 'yyyymmddHH')- dateFormat(post.data.date, 'yyyymmddHH') > 24 ? 'Updated: ' + dateFormat(post.data.date, 'mmmm dS, yyyy') : ''}
+                        {(post.data.update !== '' && (dateFormat(post.data.update, 'yyyymmddHH')- dateFormat(post.data.date, 'yyyymmddHH') > 24))? 'Updated: ' + dateFormat(post.data.date, 'mmmm dS, yyyy') : ''}
                     </em>
                 </div>
             ) : (
