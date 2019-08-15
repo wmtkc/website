@@ -2,7 +2,7 @@ import React from 'react';
 import dateFormat from 'dateformat';
 import PostCard from '../components/PostCard';
 import '../styles/BlogList.css';
-import noCover from '../../public/uploads/no-cover.jpg';
+import noCover from '../images/no-cover.jpg';
 import { useRouteData } from 'react-static';
 
 const BlogList = () => {
