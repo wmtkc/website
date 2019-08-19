@@ -3,6 +3,7 @@ import path from 'path'
 import fs from 'fs'
 import klaw from 'klaw'
 import matter from 'gray-matter'
+import { getPackedSettings } from 'http2';
 
 function getPosts () {
   console.log("Getting posts...")
@@ -44,14 +45,56 @@ function getPosts () {
   return getFiles()
 }
 
+function getTags () {
+  console.log("Getting tags...")
+  const items = []
+  // Walk ("klaw") through posts directory and push file paths into items array //
+  const getFiles = () => new Promise(resolve => {
+    // Check if posts directory exists //
+    if (fs.existsSync('public/tags')) {
+      klaw('public/tags')
+        .on('data', item => {
+          // Filter function to retrieve .md files //
+          if (path.extname(item.path) === '.md') {
+            // If markdown file, read contents //
+            const data = fs.readFileSync(item.path, 'utf8')
+            // Convert to frontmatter object and markdown content //
+            const dataObj = matter(data)
+            // Create slug for URL //
+            dataObj.data.slug = dataObj.data.value
+            // Remove unused key //
+            delete dataObj.orig
+            // Push object into items array //
+            items.push(dataObj)
+          }
+        })
+        .on('error', e => {
+          console.log(e)
+        })
+        .on('end', () => {
+          // Resolve promise for async getRoutes request //
+          // posts = items for below routes //
+          resolve(items)
+        })
+    } else {
+      // If src/posts directory doesn't exist, return items as empty array //
+      console.log("NO TAGS FOUND")
+      resolve(items)
+    }
+  })
+  return getFiles()
+}
+
 export default {
   getRoutes: async () => {
     const posts = await getPosts();
+    const tags = await getTags();
     return [
       {
         path: '/blog',
         getData: async () => ({
           posts,
+          tags,
         }),
         children: posts.map(post => ({
           path: `/${post.data.slug}`,

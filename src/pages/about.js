@@ -1,16 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Content.css';
 
-import sailboat from '../../public/uploads/sailboat.jpg'
+import me from '../images/me.jpg'
 
 const About = () => {
     return (
         <div className='content'>
-            <span className='header'>About</span>
+            <span className='header'>About Me</span>
             <div className='body'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <img src={sailboat} alt='sailboat' />
-                <em>Would it get some wind for the sailboat?</em>
+                <hr/>
+                <p>I am a student at St. Olaf College graduating in 2020 majoring in Computer Science and Chinese Language with a concentration in Linguistics.</p>
+                <p>I am currently on a semester abroad at East China Normal University in Shanghai, China in order to improve my language skills.</p>
+                <img src={me} alt='Me' />
+                <p>This website was built using React.js, React-Static, and Netlify CMS. <Link to='/'>Learn More</Link></p>
+                <p>It's definitely a work in progress, I'll be updating it as I have time.</p>
             </div>
         </div>
     );

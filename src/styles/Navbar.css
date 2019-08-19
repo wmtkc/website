@@ -9,7 +9,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    height: 220px;
+    height: 175px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -60,8 +60,10 @@
 .menu-toggle {
     visibility: visible;
     background: grey;
-    font-size: 24pt;
+    font-size: 18pt;
+    font-weight: 200;
     font-family: sans-serif;
+    line-height: 40px;
     text-decoration: none;
     text-align: center;
 }

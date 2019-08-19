@@ -21,20 +21,20 @@ class Navbar extends React.Component {
             <div className='nav-wrapper'>
                 <div className={this.state.extended ? 'navbar' : 'collapsed'}>
                     <div className='icon desktop-only'>
-                        ICON
+                        {/* ICON */}
                     </div>
                     <div>
                         <NavLink exact to='/'>Home</NavLink>
-                        <NavLink to='/projects'>Projects</NavLink>
+                        {/* <NavLink to='/projects'>Projects</NavLink> */}
                         <NavLink to='/blog'>Blog</NavLink>
                         <NavLink to='/about'>About</NavLink>
-                        <NavLink to='/contact'>Contact</NavLink>
+                        {/* <NavLink to='/contact'>Contact</NavLink> */}
                     </div>
                     <div className='icon desktop-only'>
-                        ICON
+                        {/* ICON */}
                     </div>
                 </div>
-                <div className='menu-toggle' onClick={this.toggleExtended}>≡</div>
+                <div className='menu-toggle' onClick={this.toggleExtended}>☰</div>
             </div>
         );
     }

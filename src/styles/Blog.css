@@ -1,13 +1,23 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .posts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-a {
-    text-decoration: none;
-    outline: none;
 }
 
 .card {
@@ -50,4 +60,25 @@ a {
     font-size: 11pt;
     font-style: italic;
     font-family: serif;
+}
+
+.button {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.unselected {
+    background: blue;
+    color: white;
+}
+
+.selected {
+    background: white;
+    color: blue;
 }

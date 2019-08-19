@@ -24,6 +24,7 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Tags", name: "tags", widget: "relation", collection: "tags", searchFields: ["value"], valueField: "value", displayFields: ["value"], multiple: true, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "tags"
     label: "Tags"
     identifier_field: "value"

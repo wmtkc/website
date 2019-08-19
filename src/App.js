@@ -6,8 +6,8 @@ import './styles/Containers.css'
 const App = () => {
     return (
         <Root>
+            <Navbar />
             <div className='page'>
-                <Navbar />
                 <div className='content-wrapper'>
                     <React.Suspense fallback={<em>Loading...</em>}>
                         <Routes />

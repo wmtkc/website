@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+}
+
 .page {
     min-height: 100vh;
     background-image: url('../images/background.png');
@@ -25,7 +30,8 @@ code {
     margin: auto;
     padding: 20px;
     justify-content: center;
-    background-image: url('../images/content.png');
+    /* background-image: url('../images/content.png'); */
+    background: #e0e0e0;
     background-repeat: repeat;
 }
 

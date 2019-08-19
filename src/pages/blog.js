@@ -1,47 +1,65 @@
 import React from 'react';
-import dateFormat from 'dateformat';
-import PostCard from '../components/PostCard';
-import '../styles/BlogList.css';
-import noCover from '../images/no-cover.jpg';
-import { useRouteData } from 'react-static';
+import BlogFilter from '../containers/BlogFilter';
+import BlogList from '../containers/BlogList';
+import '../styles/Blog.css';
 
-const BlogList = () => {
-    const { posts } = useRouteData();
-    const cards = [];
-    posts.forEach((post, index) => {
-        if (post.data.published) {
-            cards.push(<PostCard key={index}
-                                 url={post.data.url}
-                                 title={post.data.title} 
-                                 coverImg={post.data.thumbnail ? post.data.thumbnail : noCover} 
-                                 date={dateFormat(post.data.date, 'mmmm dS, yyyy')} />)
+class Blog extends React.Component {
+    constructor () {
+        super()
+        this.state = {
+            tags: ['all'],
+            order: 'descending'
         }
-    });
-    return (
-        <div className='posts'>
-            {cards}
-        </div>
-    );
+    }
+
+    handleChange = (type, value) => {
+        console.log("type: " + type + " value: " + value)
+
+        // I'll leave this open-ended in case I add more filters
+        if (type === 'tag') {
+            if (this.state.tags.includes(value)) {
+                let temp = this.state.tags;
+                temp.splice(temp.indexOf(value), 1)
+                if (temp.length === 0)
+                    temp.push('all')
+                this.setState({
+                    tags: temp
+                })
+            } else {
+                let temp = this.state.tags
+                if (temp.includes('all')) {
+                    temp.splice(temp.indexOf('all'), 1)
+                }
+                temp.push(value)
+                this.setState({
+                    tags: temp
+                })
+            }
+            console.log('Tags: ' + this.state.tags)
+        } else if (type === 'order') {
+            // TODO: State not changing on first try
+            if (this.state.order === 'descending') {
+                this.setState({
+                    order: 'ascending'
+                })
+            } else {
+                this.setState({
+                    order: 'descending'
+                })
+            }
+        }
+
+        console.log("BLOG STATE: " + JSON.stringify(this.state))
+    }
+
+    render () {
+        return (
+            <div className='layout'>
+                <BlogFilter onChange={this.handleChange} order={this.state.order}/>
+                <BlogList tags={this.state.tags} order={this.state.order}/>
+            </div>
+        )
+    }
 }
 
-export default BlogList;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default Blog;
