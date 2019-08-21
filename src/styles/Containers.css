@@ -18,6 +18,12 @@ a {
   outline: none;
 }
 
+em {
+  font-style: italic;
+  font-family: 'Courier New', serif;
+  font-weight: 500;
+}
+
 .page {
     min-height: 100vh;
     background-image: url('../images/background.png');
@@ -30,9 +36,9 @@ a {
     margin: auto;
     padding: 20px;
     justify-content: center;
-    /* background-image: url('../images/content.png'); */
     background: #e0e0e0;
-    background-repeat: repeat;
+    /* background-image: url('../images/content.png'); */
+    /* background-repeat: repeat; */
 }
 
 /* Tablet/Desktop */

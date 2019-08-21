@@ -9,14 +9,16 @@ const BlogFilter = props => {
     }
     const tagButtons = [];
     tags.forEach((tag, index) => {
-        tagButtons.push(<ToggleButton key={index} onClick={() => handleChange('tag', tag.data.value)} text={tag.data.value} />)
+        if (tag.data.published) {
+            tagButtons.push(<ToggleButton key={index} onClick={() => handleChange('tag', tag.data.value)} text={tag.data.value} />)
+        }
     })
     return (
         <div className='filters'>
-            <div className='filter-section order'>
+            {/* <div className='filter-section order'>
                 <span>Order</span>
                 <ToggleButton className='orderButton' onClick={() => handleChange('order', 'toggle')} text='Descending' selectedText='Ascending' />
-            </div>
+            </div> */}
             <div className='filter-section'>
                 <span>With Tag</span>
                 {tagButtons}

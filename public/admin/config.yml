@@ -12,6 +12,8 @@ collections:
     label: "Blogposts" # Used in the UI
     folder: "public/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    editor:
+      preview: false
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter. 
     # Remove any that aren't needed for posts
@@ -35,4 +37,4 @@ collections:
       preview: false
     fields:
       - {label: "Value", name: "value", widget: "string"}
-      - {label: "Blogposts", name: "blogposts", widget: "relation", collection: "blogposts", searchFields: ["title"], valueField: "url", displayFields: ["date", "title"], required: false, multiple: true}
+      - {label: "Published", name: "published", widget: "boolean"}

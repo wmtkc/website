@@ -7,8 +7,10 @@ const Home = () => {
     return (
         <div className='content'>
             <span className='banner'>Under Construction</span>
+            <hr/>
             <div className='body'>
-                <h4><img src={gif} alt='under-construction'/><em>To be honest, I just wanted to use this guy</em></h4>
+                <img src={gif} alt='under-construction' title="I could have redirected you, but I've always wanted to use this guy" />
+                <hr/>
                 <Link className='banner' to='/blog'>Go To Blog</Link>
             </div>
         </div>

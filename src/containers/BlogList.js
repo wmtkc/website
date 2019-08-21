@@ -23,7 +23,8 @@ const BlogList = props => {
             }
         });
     });
-    if (order === 'ascending') {
+    // Reverse card order
+    if (order === 'descending') {
         let temp = [];
         while (cards.length > 0) {
             temp.push(cards.shift())

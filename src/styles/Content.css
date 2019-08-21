@@ -3,6 +3,7 @@
     align-content: center;
     justify-content: center;
     font-size: 36pt;
+    margin: 20px;
 }
 
 .content {
@@ -13,16 +14,25 @@
 
 .content .header {
     font-size: 28pt;
-    font-family: sans-serif;
     margin-left: 20px;
 }
 
-.content em {
+.content .date {
     color: #444444;
     font-size: 14pt;
-    font-style: italic;
-    font-family: serif;
     margin: 5px 20px 10px 20px;
+}
+
+.content .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content .tags span {
+    font-style: italic;
+    font-family: 'Courier New', serif;
+    margin-right: 0.5em;
 }
 
 .updated {
@@ -40,9 +50,9 @@
 
 /* Body Text */
 .body p {
-    font-size: 18pt;
-    font-family: sans-serif;
-    margin: 10px 20px 10px 20px;
+    font-size: 16pt;
+    margin: 10px;
+    line-height: 22pt;
 }
 
 .body img {
@@ -51,10 +61,10 @@
     object-fit: scale-down;
     border-radius: 8px;
     box-shadow: 5px 5px 5px -2px #444444;
-    margin: 10px 10px 5px 10px
+    margin: 10px
 }
 
-/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------
 /* The following classes are hacks to provide a way to specify image placement from within markdown */
 /* ------------------------------------------------------------------------------------------------ */
 
@@ -74,11 +84,12 @@
     margin: auto;
 }
 
-/* Embed image in <h4> for line-breaking images */
-.body h4 {
+/* Embed image in <h1> for line-breaking images */
+.body h1 {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Add image captions by using em immediately after img
    Use [![alt](/path/or/url/ 'mousover')*caption*](link) to invoke in markdown */
@@ -86,15 +97,17 @@
     color: #333333;
     max-width: 90%;
     font-size: 15pt;
-    font-style: italic;
     font-weight: 500;
-    font-family: serif;
     text-align: center;
-    margin: 5px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
 }
 
 /* Desktop/Tablet */
 @media only screen and (min-width : 768px) {
+    /* .body p {
+        margin: 20px 10px 20px 10px;
+    } */
+
     .body img {
         max-height: 400px;
         max-width: 400px;
@@ -109,5 +122,6 @@
 
     .body img + em {
         max-width: 400px;
+        margin-bottom: 10px;
     }
 }
