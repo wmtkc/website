@@ -1,6 +1,5 @@
 ---
 value: Tech
-blogposts:
-  - test
+published: false
 ---
 
