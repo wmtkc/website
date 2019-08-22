@@ -86,6 +86,9 @@ function getTags () {
 }
 
 export default {
+  getSiteData: () => ({
+    title: 'Blog'
+  }),
   getRoutes: async () => {
     const posts = await getPosts();
     const tags = await getTags();
