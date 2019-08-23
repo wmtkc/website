@@ -16,6 +16,11 @@ code {
 a {
   text-decoration: none;
   outline: none;
+  color: darkblue;
+}
+
+a:hover {
+  font-weight: 600;
 }
 
 em {

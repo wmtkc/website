@@ -58,7 +58,7 @@ class Blog extends React.Component {
         return (
             <React.Fragment>
                 <hr className='vfill'/>
-                <div className='header blog-header'>
+                <div className='header'>
                     <span className='name-banner'>Blog</span>
                     <Link className='navlink' to='/about'>About</Link>
                 </div>

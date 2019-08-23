@@ -1,10 +1,7 @@
-.blog-header {
-    margin-bottom: 50px;
-}
-
 .layout {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .filters {

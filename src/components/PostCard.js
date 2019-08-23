@@ -7,11 +7,18 @@ class PostCard extends React.Component {
         return (
                 <div className='card'>
                     <Link to={`/blog/${this.props.url}`}>
-                        <img src={this.props.coverImg} alt={this.props.title} />
-                        <div>
-                            <span className='title'>{this.props.title}</span>
-                            <em className='date'>{this.props.date}</em>
-                        </div>
+                        {/* <div className='card-inner'> */}
+                            {/* <div className='card-front'> */}
+                                <img src={this.props.coverImg} alt={this.props.title} />
+                                <div>
+                                    <span className='title'>{this.props.title}</span>
+                                    <em className='date'>{this.props.date}</em>
+                                </div>
+                            {/* </div> */}
+                            {/* <div className='card-back'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            </div> */}
+                        {/* </div> */}
                     </Link>
                 </div>
         );
