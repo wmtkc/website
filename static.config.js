@@ -94,32 +94,19 @@ export default {
     const tags = await getTags();
     return [
       {
-        path: '/',
-        template: 'src/pages/index'
-      },
-      {
-        path: '/about/',
-        template: 'src/pages/about'
-      },
-      {
-        path: '/blog/',
-        template: 'src/pages/blog',
+        path: '/blog',
         getData: async () => ({
           posts,
           tags,
         }),
         children: posts.map(post => ({
-          path: `/${post.data.slug}/`,
+          path: `/${post.data.slug}`,
           template: 'src/containers/BlogPost',
           getData: async () => ({
             post,
           }),
         })),
       },
-      {
-        path: '404',
-        template: 'src/pages/about'
-      }
     ]
   },
 
@@ -140,12 +127,12 @@ export default {
   },
 
   plugins: [
-    // [
-    //   require.resolve('react-static-plugin-source-filesystem'),
-    //   {
-    //     location: path.resolve('./src/pages')
-    //   }
-    // ],
+    [
+      require.resolve('react-static-plugin-source-filesystem'),
+      {
+        location: path.resolve('./src/pages')
+      }
+    ],
     require.resolve('react-static-plugin-sitemap'),
     require.resolve('react-static-plugin-react-router')
   ],
