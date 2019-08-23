@@ -6,21 +6,44 @@
     margin: 20px;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 20px 20px 20px;
+    border-bottom: 4px solid #333333;
+    margin-bottom: 20px;
+}
+
+.name-banner {
+    font-size: 36pt;
+}
+
+.title {
+    font-size: 28pt;
+    padding: 0 20px 0 20px;
+}
+
+.vfill {
+    border: none;
+    height: 3px;
+}
+
+.navlink {
+    font-size: 18pt;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     width:100%;
 }
 
-.content .header {
-    font-size: 28pt;
-    margin-left: 20px;
-}
-
 .content .date {
     color: #444444;
     font-size: 14pt;
-    margin: 5px 20px 10px 20px;
+    margin: 5px 20px 0 0;
 }
 
 .content .tags {

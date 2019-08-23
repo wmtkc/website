@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouteData } from 'react-static';
+import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import dateFormat from 'dateformat';
 import '../styles/Content.css';
@@ -20,8 +21,11 @@ const BlogPost = () => {
         <React.Fragment>
             {post.data.published ? (
                 <div className='content'>
-                    <span className='header'>{post.data.title}</span>
+                        <span className='title'>{post.data.title}</span>
+                    <div className='header'>
                     <em className='date'>{dateFormat(post.data.date, 'mmmm dS, yyyy')}</em>
+                        <Link className='navlink' to='/blog'>Back</Link>
+                    </div>
                     <Markdown className='body' source={post.content} escapeHtml={false} />
                     {/* Display update timestamp if updated more than 24hrs after published */}
                     <em className='date updated'>

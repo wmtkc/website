@@ -25,10 +25,10 @@ class Navbar extends React.Component {
                     </div>
                     <div>
                         <nav>
-                            <NavLink exact to='/'>Home</NavLink>
+                            <NavLink exact to='/' activeClassName='active'>Home</NavLink>
                             {/* <NavLink to='/projects'>Projects</NavLink> */}
-                            <NavLink to='/blog/'>Blog</NavLink>
-                            <NavLink to='/about/'>About</NavLink>
+                            <NavLink to='/blog/' activeClassName='active'>Blog</NavLink>
+                            <NavLink to='/about/' activeClassName='active'>About</NavLink>
                             {/* <NavLink to='/contact'>Contact</NavLink> */}
                         </nav>
                     </div>

@@ -7,9 +7,12 @@ import me from '../images/me.jpg'
 const About = () => {
     return (
         <div className='content'>
-            <span className='header'>About Me</span>
+            <hr className='vfill' />
+            <div className='header'>
+                <span className='name-banner'>About Me</span>
+                <Link className='navlink' to='/blog'>Blog</Link>
+            </div>
             <div className='body'>
-                <hr/>
                 <p>I am a student at St. Olaf College graduating in 2020 majoring in Computer Science and Chinese Language with a concentration in Linguistics.</p>
                 <p>When I'm not pushing around blinking lights on a screen, I fancy myself to be something of a serial hobbyist. I have a lot of thoughts and nowhere to put them. This blog is mostly to keep track of that kind of stuff.</p>
                 <p>I am currently on a semester abroad at East China Normal University in Shanghai, China in order to improve my language skills.</p>

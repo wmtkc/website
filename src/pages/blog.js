@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BlogFilter from '../containers/BlogFilter';
 import BlogList from '../containers/BlogList';
 import '../styles/Blog.css';
+import '../styles/Content.css';
 
 class Blog extends React.Component {
     constructor () {
@@ -54,10 +56,17 @@ class Blog extends React.Component {
 
     render () {
         return (
-            <div className='layout'>
-                <BlogFilter onChange={this.handleChange} order={this.state.order}/>
-                <BlogList tags={this.state.tags} order={this.state.order}/>
-            </div>
+            <React.Fragment>
+                <hr className='vfill'/>
+                <div className='header blog-header'>
+                    <span className='name-banner'>Blog</span>
+                    <Link className='navlink' to='/about'>About</Link>
+                </div>
+                <div className='layout'>
+                    <BlogFilter onChange={this.handleChange} order={this.state.order}/>
+                    <BlogList tags={this.state.tags} order={this.state.order}/>
+                </div>
+            </React.Fragment>
         )
     }
 }
