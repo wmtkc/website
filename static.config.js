@@ -98,18 +98,18 @@ export default {
         template: 'src/pages/index'
       },
       {
-        path: '/about',
+        path: '/about/',
         template: 'src/pages/about'
       },
       {
-        path: '/blog',
+        path: '/blog/',
         template: 'src/pages/blog',
         getData: async () => ({
           posts,
           tags,
         }),
         children: posts.map(post => ({
-          path: `/${post.data.slug}`,
+          path: `/${post.data.slug}/`,
           template: 'src/containers/BlogPost',
           getData: async () => ({
             post,
