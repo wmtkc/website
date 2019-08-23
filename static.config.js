@@ -3,7 +3,6 @@ import path from 'path'
 import fs from 'fs'
 import klaw from 'klaw'
 import matter from 'gray-matter'
-import { getPackedSettings } from 'http2';
 
 function getPosts () {
   console.log("Getting posts...")
