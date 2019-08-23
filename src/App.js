@@ -1,5 +1,6 @@
 import React from 'react';
 import { Root, Routes } from 'react-static';
+import { Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import './styles/Containers.css'
 
@@ -10,7 +11,7 @@ const App = () => {
             <div className='page'>
                 <div className='content-wrapper'>
                     <React.Suspense fallback={<em>Loading...</em>}>
-                        <Routes />
+                        <Route render={() => <Routes />} />
                     </React.Suspense>
                 </div>
             </div>
