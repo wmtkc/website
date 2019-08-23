@@ -94,7 +94,16 @@ export default {
     const tags = await getTags();
     return [
       {
+        path: '/',
+        template: 'src/pages/index'
+      },
+      {
+        path: '/about',
+        template: 'src/pages/about'
+      },
+      {
         path: '/blog',
+        template: 'src/pages/blog',
         getData: async () => ({
           posts,
           tags,
@@ -107,6 +116,10 @@ export default {
           }),
         })),
       },
+      {
+        path: '404',
+        template: 'src/pages/about'
+      }
     ]
   },
 
@@ -127,12 +140,12 @@ export default {
   },
 
   plugins: [
-    [
-      require.resolve('react-static-plugin-source-filesystem'),
-      {
-        location: path.resolve('./src/pages')
-      }
-    ],
+    // [
+    //   require.resolve('react-static-plugin-source-filesystem'),
+    //   {
+    //     location: path.resolve('./src/pages')
+    //   }
+    // ],
     require.resolve('react-static-plugin-sitemap'),
     require.resolve('react-static-plugin-react-router')
   ],

@@ -26,8 +26,8 @@ class Navbar extends React.Component {
                     <div>
                         <NavLink exact to='/'>Home</NavLink>
                         {/* <NavLink to='/projects'>Projects</NavLink> */}
-                        <NavLink exact to='/blog/'>Blog</NavLink>
-                        <NavLink exact to='/about/'>About</NavLink>
+                        <NavLink to='/blog'>Blog</NavLink>
+                        <NavLink to='/about'>About</NavLink>
                         {/* <NavLink to='/contact'>Contact</NavLink> */}
                     </div>
                     <div className='icon desktop-only'>
