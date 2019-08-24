@@ -23,18 +23,18 @@ const BlogPost = () => {
                 <div className='content'>
                         <span className='title'>{post.data.title}</span>
                     <div className='header'>
-                    <em className='date'>{dateFormat(post.data.date, 'mmmm dS, yyyy')}</em>
+                        <em className='date'>{dateFormat(post.data.date, 'mmmm dS, yyyy')}</em>
                         <Link className='navlink' to='/blog'>Back</Link>
                     </div>
                     <Markdown className='body' source={post.content} escapeHtml={false} />
-                    {/* Display update timestamp if updated more than 24hrs after published */}
-                    <em className='date updated'>
-                        {(post.data.update !== '' && (dateFormat(post.data.update, 'yyyymmddHH')- dateFormat(post.data.date, 'yyyymmddHH') > 24))? 'Updated: ' + dateFormat(post.data.date, 'mmmm dS, yyyy') : ''}
-                    </em>
                     <div className='tags'>
                         <em>Tags</em><span>:</span>
                         {tagSet}
                     </div>
+                    {/* Display update timestamp if updated more than 24hrs after published */}
+                    <em className='updated date'>
+                        {(post.data.update !== '' && (dateFormat(post.data.update, 'yyyymmddHH')- dateFormat(post.data.date, 'yyyymmddHH') > 24))? 'Updated: ' + dateFormat(post.data.update, 'mmmm dS, yyyy') : ''}
+                    </em>
                 </div>
             ) : (
                 <NotFound />

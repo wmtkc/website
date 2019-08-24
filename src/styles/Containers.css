@@ -11,6 +11,26 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  font-size: 14pt;
+}
+
+p, h1, h2, h3 {
+  width: 100%;
+  hyphens: auto;
+}
+
+ul, ol, blockquote, pre {
+  display: block;
+  float: left;
+  width: 80%;
+  padding-right: 20px;
+  line-height: 24pt;
+  hyphens: auto;
+}
+
+blockquote {
+  border-left: 4px solid #333333;
+  padding-left: 20px;
 }
 
 a {
@@ -25,7 +45,7 @@ a:hover {
 
 em {
   font-style: italic;
-  font-family: Garamond, 'Times New Roman', serif;
+  font-family: source-serif-pro, Garamond, 'Times New Roman', serif;
   font-weight: 500;
 }
 
@@ -34,6 +54,30 @@ hr {
   height: 10px;
   border: none;
   border-bottom: 4px solid #333333;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0 20px 0;
+}
+
+table tr {
+  border-bottom: 1px dotted #444444;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+table thead {
+  border-bottom: 2px solid #333333;
+}
+
+table tr th, table tr td {
+  text-align: left;
+  padding: 10px 10px 5px 30px;
+}
+
+table tr th:first-of-type, table tr td:first-of-type{
+  padding-left: 5px;
 }
 
 .page {
@@ -56,7 +100,7 @@ hr {
 /* Tablet/Desktop */
 @media only screen and (min-width : 768px) {
     .page .content-wrapper {
-        min-height: 600px;
+        min-height: 75vh;
         width: 50%;
         padding: 50px;
         margin-bottom: 100px;
@@ -64,5 +108,9 @@ hr {
         border-bottom: 4px solid #333333;
         border-left: 4px solid #333333;
         box-shadow: 5px 5px 10px 5px #444444;
+    }
+
+    h1, h2, h3, p code {
+      margin-left: 30px;
     }
 }

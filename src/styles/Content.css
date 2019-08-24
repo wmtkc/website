@@ -27,7 +27,7 @@
 
 .vfill {
     border: none;
-    height: 3px;
+    height: 2px;
 }
 
 .navlink {
@@ -43,7 +43,6 @@
 .content .date {
     color: #444444;
     font-size: 14pt;
-    margin: 5px 20px 0 0;
 }
 
 .content .tags {
@@ -59,6 +58,7 @@
 }
 
 .updated {
+    margin: 50px 20px 0 0;
     width: 90%;
     display: block;
     text-align: right;
@@ -69,6 +69,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Body Text */
@@ -107,8 +108,8 @@
     margin: auto;
 }
 
-/* Embed image in <h1> for line-breaking images */
-.body h1 {
+/* Embed image in <h4> for line-breaking images */
+.body h4 {
     display: flex;
     flex-direction: column;
 }
@@ -130,6 +131,9 @@
     /* .body p {
         margin: 20px 10px 20px 10px;
     } */
+    .content .body {
+        margin-bottom: 50px;
+    }
 
     .body img {
         max-height: 400px;

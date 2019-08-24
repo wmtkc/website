@@ -75,6 +75,7 @@
     color: white;
     font-size: 16pt;
     padding: 0;
+    text-overflow: ellipsis;
 }
 
 .card .date {
