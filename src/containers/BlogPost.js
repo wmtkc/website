@@ -12,9 +12,9 @@ const BlogPost = () => {
     const { post } = useRouteData();
     const tagSet = [];
     post.data.tags.forEach((tag, index) => {
-        tagSet.push(<em>{tag}</em>)
+        tagSet.push(<em key={index}>{tag}</em>)
         if (index < post.data.tags.length-1) {
-            tagSet.push(<span>,</span>)
+            tagSet.push(<span key={post.data.tags.length+index}>,</span>)
         }
     })
     return (
