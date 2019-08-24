@@ -16,6 +16,20 @@
     margin-bottom: 20px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+    line-height: 24pt;
+    border-top: 4px solid #333333;
+}
+
+.content .footer .date {
+    font-size: 12pt;
+}
+
 .name-banner {
     font-size: 36pt;
 }
@@ -55,13 +69,6 @@
     font-style: italic;
     font-family: 'Courier New', serif;
     margin-right: 0.5em;
-}
-
-.updated {
-    margin: 50px 20px 0 0;
-    width: 90%;
-    display: block;
-    text-align: right;
 }
 
 .content .body {
@@ -131,8 +138,9 @@
     /* .body p {
         margin: 20px 10px 20px 10px;
     } */
-    .content .body {
-        margin-bottom: 50px;
+
+    .footer {
+        flex-direction: row;
     }
 
     .body img {
