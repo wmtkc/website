@@ -19,12 +19,25 @@ p, h1, h2, h3 {
   hyphens: auto;
 }
 
+h1 {
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+h3 {
+  font-size: 16pt;
+}
+
 ul, ol, blockquote, pre {
   display: block;
   float: left;
   width: 80%;
   padding-right: 20px;
   line-height: 24pt;
+  font-size: 14pt;
   hyphens: auto;
 }
 
