@@ -81,6 +81,8 @@ table tr th:first-of-type, table tr td:first-of-type{
 }
 
 iframe {
+  max-height: auto;
+  max-width: 90%;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 5px 5px 5px -2px #444444;
