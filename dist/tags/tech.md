@@ -1,5 +1,5 @@
 ---
 value: Tech
-published: false
+published: true
 ---
 

@@ -19,7 +19,7 @@ const About = () => {
                 <h4><img src={me} alt='Me' /></h4>
                 <p><Link to='/blog/i-have-a-blog-now'>About my blog</Link></p>
                 <p>If you want to subscribe to updates, email me at <a href='mailto:williamkc@wmcasey.com'>williamkc@wmcasey.com</a> with the subject line "Subscribe" and I'll add you to an email list. I'll implement a better system when I have time.</p>
-                <p>This website was built using React.js, React-Static, and Netlify CMS. <Link to='/blog/tech-specs#top'>Learn More</Link></p>
+                <p>This website was built using React.js, React-Static, and Netlify CMS. <Link to='/blog/tech-specs'>Learn More</Link></p>
                 <p>It's definitely a work in progress, I'll be updating it as I have time.</p>
             </div>
         </div>
