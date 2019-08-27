@@ -41,7 +41,7 @@ I plan to post about all kinds of things. The only post-sorting tool I have impl
 
 # How can I stay updated?
 
-When I have time I'll implement RSS and all of that fun stuff. For now, shoot me an email at williamkc@wmcasey.com with the subject line "Subscribe" and I'll add you to an email list. Keep in mind none of this is automated yet, I've only really had the time to get this site online and write these introductory posts. Thanks for your patience.
+When I have time I'll implement RSS and all of that fun stuff. For now, shoot me an email at [williamkc@wmcasey.com](mailto:williamkc@wmcasey.com) with the subject line "Subscribe" and I'll add you to an email list. Keep in mind none of this is automated yet, I've only really had the time to get this site online and write these introductory posts. Thanks for your patience.
 
 # Do you have any posting guidelines?
 
@@ -53,7 +53,7 @@ Unless a political situation is particularly relevant to myself or my own way of
 
 ## 2. Sources will be cited where possible
 
-I'd love to put informational and educational content on here occasionally, but that comes with the risk of becoming a source of misinformation. While I cannot guarantee that all of my information will be accurate, I will make an effort to maintain a standard of research and citation (via links, not footnotes; I'm not an academic). I will, however, add that I am not above using Wikipedia as a quick source as it is basically _Hitchhiker's Guide to the Galaxy_ but real (also their maintenance standards are definitely higher than mine anyway). Information that is anecdotal or otherwise uncitable will be marked clearly as such. Original content that does not belong to me will also be directly embedded where possible.
+I'd love to put informational and educational content on here occasionally, but that comes with the risk of becoming a source of misinformation. While I cannot guarantee that all of my information will be accurate, I will make an effort to maintain a standard of research and citation (via links, not footnotes; I'm not an academic). I will, however, add that I am not above using Wikipedia as a quick source as it is basically the _Hitchhiker's Guide to the Galaxy_ but real (also their maintenance standards are definitely higher than mine anyway). Information that is anecdotal or otherwise uncitable will be marked clearly as such. Original content that does not belong to me will also be directly embedded where possible.
 
 ## 3. Updates to original posts will be noted
 
@@ -62,7 +62,5 @@ This is pretty self-explanatory. I've given myself a 24-hour window to make as m
 ## 4. I will not adhere to a posting schedule
 
 This is for my own sanity, I don't want that kind of pressure at all. Also, daily/weekly/otherwise-periodical blogs run the risk of essentially becoming a diary. And I'm not interested in posting my diary on the internet quite yet. Quality over quantity.
-
-
 
 That is all for now, stay tuned for updates.
