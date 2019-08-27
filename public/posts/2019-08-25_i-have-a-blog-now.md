@@ -29,7 +29,7 @@ Sure, there are plenty of reasons I'd prefer to avoid keeping my personal inform
 
 I will admit, the one upside of social media is that it allows you to keep up with what's going on in the lives of the people you care about. Part of the reason I've created this blog is to capture some element of that. So if you _really_ want to know what I'm up to, you know where to find me.
 
-I've purposefully designed this blog without any form of direct feedback because I don't want to emulate social media. If you would like to get in contact with me, you can shoot me an email.
+I've purposefully designed this blog without any form of direct feedback because I don't want to emulate social media. If you would like to get in contact with me, you can [shoot me an email](mailto:williamkc@wmcasey.com).
 
 # Why now?
 
