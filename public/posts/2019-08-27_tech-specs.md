@@ -59,4 +59,4 @@ If you're horrified at the prospect of storing hundreds of photos and other medi
 
 # Zoho Mail
 
-[Zoho Mail](https://www.zoho.com/mail/) is pretty much the quickest and cheapest (it's free) way to receive and send emails using your own domain. It takes some tinkering with DNS records, but they do a good job of walking you through it. The only downside is that forewarding is not included in their free plan, so you have to use their front end. It's a good user interface though and has a bunch of API integrations, so I don't have any complaints.
+[Zoho Mail](https://www.zoho.com/mail/) is pretty much the quickest and cheapest (it's free) way to receive and send emails using your own domain. It takes some tinkering with DNS records, but they do a good job of walking you through it. The only downside is that mail forwarding is not included in their free plan, so you have to use their front end. It's a good user interface though and has a bunch of API integrations, so I don't have any complaints.
