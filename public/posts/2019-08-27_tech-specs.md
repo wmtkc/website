@@ -23,7 +23,7 @@ The Big Three of web development. Here's a quick explanation of each so you'll k
 
 # React.js
 
-[React.js](https://reactjs.org/) is a JavaScript library that can be used to build a framework. What that basically means is that it lets me easily manipulate the document objects displayed when you view the site. One of the biggest advantages to this is componentization, which lets me reuse code I've already written. For example, each blogpost has the same basic structure (title, body, tags, etc.) which is populated by information when the site creates an instance. Dynamic manipulation of the HTML document that is being displayed is another major advantage; consider how the list of posts changes when you select different tags to filter the list of blogposts.
+[React.js](https://reactjs.org/) is a JavaScript library that can be used to build a framework. What that basically means is that I can easily manipulate the exactly what content is displayed when you view the site and change it dynamically. Consider how the list of blogposts changes when you select different tags in the filter on the [main page](/blog) Another major advantage of using a framework is componentization, a concept that lets me reuse code I've already written. For example, each blogpost on this site has the same basic structure (title, body, tags, etc.) which is populated by information when the site creates an instance.
 
 React actually doesn't use HTML directly, it uses something called [JSX](https://reactjs.org/docs/introducing-jsx.html). It looks similar, but it is actually one of the many tools that developers have come up with to be able to change a page's HTML without reloading.
 
