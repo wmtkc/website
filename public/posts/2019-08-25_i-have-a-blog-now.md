@@ -39,6 +39,10 @@ Well, frankly I didn't really have the know-how to assemble something like this 
 
 I plan to post about all kinds of things. The only post-sorting tool I have implemented at the time of writing is a tagging system. I will give each post a series of tags (listed in the footer) so you can easily navigate by topic. I'm a bit of a serial hobbyist at heart, so there will be plenty of topics to browse through eventually.
 
+# How can I stay updated?
+
+When I have time I'll implement RSS and all of that fun stuff. For now, shoot me an email at williamkc@wmcasey.com with the subject line "Subscribe" and I'll add you to an email list. Keep in mind none of this is automated yet, I've only really had the time to get this site online and write these introductory posts. Thanks for your patience.
+
 # Do you have any posting guidelines?
 
 I'd like to set myself a few ground rules. I don't think I'll have much trouble adhering to them, but I'm setting them in stone right now so nobody expects anything they won't be getting from me here.
@@ -58,3 +62,7 @@ This is pretty self-explanatory. I've given myself a 24-hour window to make as m
 ## 4. I will not adhere to a posting schedule
 
 This is for my own sanity, I don't want that kind of pressure at all. Also, daily/weekly/otherwise-periodical blogs run the risk of essentially becoming a diary. And I'm not interested in posting my diary on the internet quite yet. Quality over quantity.
+
+
+
+That is all for now, stay tuned for updates.
