@@ -15,7 +15,7 @@ class Blog extends React.Component {
     }
 
     handleChange = (type, value) => {
-        console.log("type: " + type + " value: " + value)
+        console.log("Change " + type + ": " + value)
 
         // I'll leave this open-ended in case I add more filters
         if (type === 'tag') {
@@ -37,7 +37,6 @@ class Blog extends React.Component {
                     tags: temp
                 })
             }
-            console.log('Tags: ' + this.state.tags)
         } else if (type === 'order') {
             // TODO: State not changing on first try
             if (this.state.order === 'descending') {
@@ -50,8 +49,6 @@ class Blog extends React.Component {
                 })
             }
         }
-
-        console.log("BLOG STATE: " + JSON.stringify(this.state))
     }
 
     render () {

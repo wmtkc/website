@@ -17,6 +17,11 @@ const BlogPost = () => {
             tagSet.push(<span key={post.data.tags.length+index}>,</span>)
         }
     })
+
+    const LinkRenderer = (props) => {
+        return <a href={props.href} rel='noopener noreferrer' target='_blank'>{props.children}</a>
+    }
+      
     return (
         <React.Fragment>
             {post.data.published ? (
@@ -26,7 +31,7 @@ const BlogPost = () => {
                         <em className='date'>{dateFormat(post.data.date, 'mmmm dS, yyyy')}</em>
                         <Link className='navlink' to='/blog'>Back</Link>
                     </div>
-                    <Markdown className='body' source={post.content} escapeHtml={false} />
+                    <Markdown className='body' source={post.content} escapeHtml={false} renderers={{link: LinkRenderer}} />
                     <div className='footer'>
                         <div className='tags'>
                             <em>Tags</em><span>:</span>

@@ -131,7 +131,7 @@ iframe {
         box-shadow: 5px 5px 10px 5px #444444;
     }
 
-    h1, h2, h3, p code {
+    p code {
       margin-left: 30px;
     }
 }
