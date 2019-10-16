@@ -14,7 +14,7 @@ Yep, I've finally gone and made my own little corner of the internet. I'm sure y
 
 To make a long story short, this exists for two major reasons:
 
-1. I'm a bsick of traditional social media, but I still want to have some presence on the internet
+1. I'm sick of traditional social media, but I still want to have some presence on the internet
 2. I needed a place to show off my web-design skills because I, like many, like to eat
 
 A blog is a great way to show off because it shows I can organize a bunch of different information and present it in an easy-to-navigate format on the internet. This is also why I haven't put this all together using a more user-friendly service like Wordpress or Blogger.
