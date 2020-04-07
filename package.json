@@ -20,29 +20,31 @@
   },
   "homepage": "https://github.com/wmtkc/website#readme",
   "dependencies": {
+    "core-js": "^3.6.4",
     "dateformat": "^3.0.3",
     "gray-matter": "^4.0.2",
     "klaw": "^3.0.0",
-    "netlify-identity-widget": "^1.5.5",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-hot-loader": "^4.12.10",
-    "react-markdown": "^4.1.0",
-    "react-router-dom": "^5.0.1",
-    "react-static": "^7.0.0",
-    "react-static-plugin-react-router": "^7.0.10",
-    "react-static-plugin-sitemap": "^7.0.10",
-    "react-static-plugin-source-filesystem": "^7.1.0"
+    "netlify-identity-widget": "^1.5.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.20",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-static": "^7.2.3",
+    "react-static-plugin-react-router": "^7.2.3",
+    "react-static-plugin-sitemap": "^7.2.3",
+    "react-static-plugin-source-filesystem": "^7.2.3"
   },
   "devDependencies": {
+    "@types/react": "^16.9.32",
     "babel-eslint": "9.x",
     "eslint": "5.x",
     "eslint-config-react-app": "^3.0.8",
     "eslint-config-react-tools": "1.x.x",
     "eslint-plugin-flowtype": "2.x",
-    "eslint-plugin-import": "2.x",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react": "^7.19.0",
     "serve": "10.1.2"
   }
 }
