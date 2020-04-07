@@ -15,7 +15,6 @@ const About = () => {
             <div className='body'>
                 <p>I am a student at St. Olaf College graduating in 2020 majoring in Computer Science and Chinese Language with a concentration in Linguistics.</p>
                 <p>When I'm not pushing around blinking lights on a screen, I fancy myself to be something of a serial hobbyist. I have a lot of thoughts and nowhere to put them. This blog is mostly to keep track of that kind of stuff.</p>
-                <p>I am currently on a semester abroad at East China Normal University in Shanghai, China in order to improve my language skills.</p>
                 <h4><img src={me} alt='Me' /></h4>
                 <p><Link to='/blog/i-have-a-blog-now'>About my blog</Link></p>
                 <p>If you want to subscribe to updates, email me at <a href='mailto:williamkc@wmcasey.com'>williamkc@wmcasey.com</a> with the subject line "Subscribe" and I'll add you to an email list. I'll implement a better system when I have time.</p>
