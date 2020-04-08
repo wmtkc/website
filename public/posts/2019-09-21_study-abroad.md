@@ -2,55 +2,66 @@
 layout: blog
 title: Study Abroad
 url: study-abroad
-published: false
-date: 2019-09-21T13:52:23.205Z
-update: ''
+published: true
+date: "2019-09-21T13:52:23.205Z"
+update: ""
+thumbnail: /uploads/img_20191206_155614.jpg
 tags:
   - Travel
   - China Study 2019
 ---
-This past Thursday marks four whole weeks since I arrived in Shanghai for my study abroad. That's a long time without an update. I have a thousand excuses, so I figured I might as well write them all in one place.
+I'm finally getting around to publishing some entries about my study abroad experience. Please hold your applause until the end, thank you.
 
-For those of you who don't follow what I'm up to at all times, surprise! I'm in China. I'll be here through December in an effort to make my Chinese less horrible. During that time I will be staying at East China Normal University's Zhongbei campus (华东师范大学).
+I was in Shanghai between August and December of 2019 in an effort to make Chinese a little less horrible. During that time I stayed East China Normal University's Zhongbei campus (ECNU/华东师范大学).
 
-Here's the important stuff I'm doing here. If I do anything big, I'll try to make it into its own post.
+# The Campus
+
+ECNU has a lovely campus with lots of garden space to enjoy. There are lots of small Shanghainese restaurants in the immediate area in addition to the school having several excellent cafeterias. There are even a few shops on campus where you can grab a quick snack or supplies.
+
+<div>![ECNU](/uploads/img_20191206_155614.jpg "ECNU")</div>
+
+The program itself was very large and pulled from universities all around the world, so I had the pleasure of being the only American in my class. Zhongbei campus is close to the heart of Shanghai, about a 30 minute metro ride from the Bund, Lujiazui, and Nanjing Road.
+
+![Lujiazui from The Bund](/uploads/mvimg_20191020_213145.jpg "Lujiazui from The Bund")*Lujiazui from The Bund*
+
+The neighborhood around ECNU has several shopping centers as well Changfeng Park (长风公园). Lots of places to explore and enjoy.
 
 # Classes
 
-It's probably not that surprising that most of my class time will be dedicated to language learning. Five days per week (Monday through Friday) I have classes taught in Mandarin from 8:30am until 11:45am. There's a 15 minute break in there too which I like to use to grab coffee from the shop across the street.
+It's probably not that surprising that most of my class time was dedicated to language learning. Five days per week (Monday through Friday) I had classes taught in Mandarin from 8:30 - 11:45am. There was a 15 minute break halfway through which I liked to use to grab coffee from the shop across the street.
 
 ## Speaking
 
-On Monday and Wednesday I have speaking class. This mainly focuses on new grammar and proper use of the words/grammar I already know. There is also new vocabulary introduced each period. So far, classes have focused rather intensely on naming synonyms/antonyms of known vocabulary, as well as articulating the differences between closely related words and phrases. I've really appreciate these lessons so far. They're great for cultivating a better command of the language.
+On Monday and Wednesday I had speaking class. This mainly focused on new grammar and proper use of the words/grammar I already know. There was also new vocabulary introduced each period. Classes focused rather intensely on naming synonyms/antonyms of known vocabulary, as well as articulating the differences between closely related words and phrases. I really appreciated these lessons even for that reason alone. They were great for cultivating a better command of the language.
+
+<p>![Class building](/uploads/mvimg_20190924_092023.jpg "Class building")</p>
 
 ## Reading/Writing
 
-On Tuesday and Thursday I instead have reading/writing class. Much of this class consists of taking turns from a presentation prepared by the professor. We also have to take weekly dictation tests during which the professor reads the new vocabulary and we have to write what is said. As you might imagine, this isn't as straightforward in Chinese as it is in other languages.
+On Tuesday and Thursday I had reading/writing class taught in the same room but with a different professor. Much of this class consisted of talking turns from a presentation prepared by the professor. We also had to take weekly dictation tests during which we had to write the new vocabulary as the professor read it aloud. As you might imagine, this isn't as straightforward in Chinese as it is in other languages.
 
 ## Listening
 
-Friday mornings are for listening class. I've only had one period of this so far, but it seems that the main focus is on listening to audio tracks and taking short workbook quizzes about them. It's definitely good practice in learning to understand a wide variety of voices.
+Friday mornings were for listening class. Listening to audio tracks and taking short workbook quizzes about them was the main focus of this class. Sometimes we watched documentaries and listened to music in Mandarin to get a sense of the language as used in different contexts. It was definitely good practice in learning to understand a wide variety of voices.
+
+<div>![Ginger Chicken Soup](/uploads/img_20191019_130453_exported_stabilized_178720828601232833.gif "Ginger Chicken Soup")</div>
 
 ## Philosophy
 
-_One of these things is not like the others!_
+*One of these things is not like the others!*
 
-I had extra time to take an English language class, so I decided on Chinese Philosophy! For a diehard STEM afficionado, I do really like dabbling in philosophy when I can. Most classes I can take back at home barely even touch on the existence of the Eastern half of the tradition though, so I'm looking forward to this being a productive learning opportunity. The class will cover the core texts, tenets, and philosophers of China's major philosophical schools. These will include Confucianism, Daoism, Mohism, Legalism, and Chinese Buddhism.
+I had extra time to take an English language class, so I decided on Chinese Philosophy! For a diehard STEM aficionado, I do really like dabbling in philosophy when I can. Most classes I can take back at home barely even touch on the existence of the Eastern half of the tradition though, so I was very excited to have the opportunity. The class covered the core texts, tenets, and philosophers of China's major philosophical schools: Confucianism, Daoism, Mohism, Legalism, and Chinese Buddhism. This class also really helped me to contextualize a lot of the more historical areas I visited during the trip.
 
 # Housing
 
-Housing was initially tough to sort out. A few months ago, I registered for the dorm I'm living in now. What I didn't know at the time was that the 10,000 RMB (~$1400) would be due up front. In cash. That threw a wrench in my plans for a couple of days. If you're feeling daring, you should try traveling halfway around the world and pulling that much cash out of an ATM just to see what happens.
+Housing was initially tough to sort out. I registered for my dorm over the summer, but what I didn't know at the time was that the full housing payment would be due up front. In cash. That threw a wrench in my plans for a couple of days. If you're feeling daring, you should try traveling halfway around the world and pulling a huge wad cash out of an ATM just to see what happens. It doesn't help that China's largest bill is worth about $14 at the time of writing.
 
-![Money](/uploads/img_20190901_084406.jpg)
-_China needs some higher denomination money. 100 RMB is about $14_
+![Dorm View](/uploads/mvimg_20190829_044435.jpg)*View from my dorm*
 
-It took a few days to get the money, but I was able to placate the receptionist with a deposit in the meantime. Here are some pics of the room. I'd tell you the mess was from unpacking, but it's been four weeks and it has only gotten worse, so that would just be a lie.
+It took a few days to get the money, but I was able to placate the receptionist with a deposit in the meantime. Here are some pics of the room. I'd tell you the mess was from unpacking, but it never looked much nicer than this so that would just be a lie.
 
-![My dorm](/uploads/mvimg_20190901_141543.jpg)
+![My dorm](/uploads/mvimg_20190901_141543.jpg "My dorm")
 
-![The bathroom](/uploads/mvimg_20190901_141643.jpg)
-_It's an all in one, but I'm grateful to have one in our room_
+In the end I was placed in a dorm on the 11th story of one of the exchange student dorms on campus with a roommate from Japan. Plenty of amenities including a private bathroom and laundry facilities.
 
-
-
-Further updates to come whenever I feel like posting them.
+I had a great time in China and I'm happy to be getting around to posting these updates! More to come on the less academic aspects of the trip, enjoy!
