@@ -3,7 +3,7 @@ layout: blog
 title: Study Abroad
 url: study-abroad
 published: true
-date: "2019-09-21T13:52:23.205Z"
+date: "2020-04-08T13:52:23.205Z"
 update: ""
 thumbnail: /uploads/img_20191206_155614.jpg
 tags:
@@ -18,11 +18,13 @@ I was in Shanghai between August and December of 2019 in an effort to make Chine
 
 ECNU has a lovely campus with lots of garden space to enjoy. There are lots of small Shanghainese restaurants in the immediate area in addition to the school having several excellent cafeterias. There are even a few shops on campus where you can grab a quick snack or supplies.
 
-<div>![ECNU](/uploads/img_20191206_155614.jpg "ECNU")</div>
+<div>
+!\[ECNU](/uploads/img_20191206_155614.jpg "ECNU")
+</div>
 
 The program itself was very large and pulled from universities all around the world, so I had the pleasure of being the only American in my class. Zhongbei campus is close to the heart of Shanghai, about a 30 minute metro ride from the Bund, Lujiazui, and Nanjing Road.
 
-![Lujiazui from The Bund](/uploads/mvimg_20191020_213145.jpg "Lujiazui from The Bund")*Lujiazui from The Bund*
+#### ![Lujiazui from The Bund](/uploads/mvimg_20191020_213145.jpg "Lujiazui from The Bund")*Lujiazui from The Bund*
 
 The neighborhood around ECNU has several shopping centers as well Changfeng Park (长风公园). Lots of places to explore and enjoy.
 
@@ -34,7 +36,9 @@ It's probably not that surprising that most of my class time was dedicated to la
 
 On Monday and Wednesday I had speaking class. This mainly focused on new grammar and proper use of the words/grammar I already know. There was also new vocabulary introduced each period. Classes focused rather intensely on naming synonyms/antonyms of known vocabulary, as well as articulating the differences between closely related words and phrases. I really appreciated these lessons even for that reason alone. They were great for cultivating a better command of the language.
 
-<p>![Class building](/uploads/mvimg_20190924_092023.jpg "Class building")</p>
+<p>
+!\[Class building](/uploads/mvimg_20190924_092023.jpg "Class building")
+</p>
 
 ## Reading/Writing
 
@@ -44,7 +48,9 @@ On Tuesday and Thursday I had reading/writing class taught in the same room but 
 
 Friday mornings were for listening class. Listening to audio tracks and taking short workbook quizzes about them was the main focus of this class. Sometimes we watched documentaries and listened to music in Mandarin to get a sense of the language as used in different contexts. It was definitely good practice in learning to understand a wide variety of voices.
 
-<div>![Ginger Chicken Soup](/uploads/img_20191019_130453_exported_stabilized_178720828601232833.gif "Ginger Chicken Soup")</div>
+<div>
+!\[Ginger Chicken Soup](/uploads/img_20191019_130453_exported_stabilized_178720828601232833.gif "Ginger Chicken Soup")
+</div>
 
 ## Philosophy
 
@@ -56,11 +62,11 @@ I had extra time to take an English language class, so I decided on Chinese Phil
 
 Housing was initially tough to sort out. I registered for my dorm over the summer, but what I didn't know at the time was that the full housing payment would be due up front. In cash. That threw a wrench in my plans for a couple of days. If you're feeling daring, you should try traveling halfway around the world and pulling a huge wad cash out of an ATM just to see what happens. It doesn't help that China's largest bill is worth about $14 at the time of writing.
 
-![Dorm View](/uploads/mvimg_20190829_044435.jpg)*View from my dorm*
+#### ![Dorm View](/uploads/mvimg_20190829_044435.jpg)*View from my dorm*
 
 It took a few days to get the money, but I was able to placate the receptionist with a deposit in the meantime. Here are some pics of the room. I'd tell you the mess was from unpacking, but it never looked much nicer than this so that would just be a lie.
 
-![My dorm](/uploads/mvimg_20190901_141543.jpg "My dorm")
+#### ![My dorm](/uploads/mvimg_20190901_141543.jpg "My dorm")
 
 In the end I was placed in a dorm on the 11th story of one of the exchange student dorms on campus with a roommate from Japan. Plenty of amenities including a private bathroom and laundry facilities.
 
