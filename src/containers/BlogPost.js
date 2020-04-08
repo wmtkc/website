@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouteData } from 'react-static';
 import { Link } from 'react-router-dom';
-import Markdown from 'react-markdown';
+import Markdown from 'react-markdown/with-html';
 import dateFormat from 'dateformat';
 import '../styles/Content.css';
 

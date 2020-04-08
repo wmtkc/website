@@ -84,6 +84,7 @@
     font-size: 16pt;
     margin: 10px;
     line-height: 22pt;
+    float: none;
 }
 
 .body img {
@@ -101,7 +102,7 @@
 
 /* Embed image in <p> to float left */
 .body p p {
-    display: flex;
+    display: block;
     flex-direction: column;
     float: left;
     margin: auto;
@@ -109,7 +110,7 @@
 
 /* Embed image in <div> to float right */
 .body p div {
-    display: flex;
+    display: block;
     flex-direction: column;
     float: right;
     margin: auto;
