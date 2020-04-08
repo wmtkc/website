@@ -16,11 +16,7 @@ I was in Shanghai between August and December of 2019 in an effort to make Chine
 
 # The Campus
 
-ECNU has a lovely campus with lots of garden space to enjoy. There are lots of small Shanghainese restaurants in the immediate area in addition to the school having several excellent cafeterias. There are even a few shops on campus where you can grab a quick snack or supplies.
-
-<div>
-!\[ECNU](/uploads/img_20191206_155614.jpg "ECNU")
-</div>
+ECNU has a lovely campus with lots of garden space to enjoy. There are lots of small Shanghainese restaurants in the immediate area in addition to the school having several excellent cafeterias. <div>![ECNU](/uploads/img_20191206_155614.jpg "ECNU")</div> There are even a few shops on campus where you can grab a quick snack or supplies.
 
 The program itself was very large and pulled from universities all around the world, so I had the pleasure of being the only American in my class. Zhongbei campus is close to the heart of Shanghai, about a 30 minute metro ride from the Bund, Lujiazui, and Nanjing Road.
 
@@ -34,11 +30,7 @@ It's probably not that surprising that most of my class time was dedicated to la
 
 ## Speaking
 
-On Monday and Wednesday I had speaking class. This mainly focused on new grammar and proper use of the words/grammar I already know. There was also new vocabulary introduced each period. Classes focused rather intensely on naming synonyms/antonyms of known vocabulary, as well as articulating the differences between closely related words and phrases. I really appreciated these lessons even for that reason alone. They were great for cultivating a better command of the language.
-
-<p>
-!\[Class building](/uploads/mvimg_20190924_092023.jpg "Class building")
-</p>
+On Monday and Wednesday I had speaking class. This mainly focused on new grammar and proper use of the words/grammar I already know. There was also new vocabulary introduced each period. <p>![Class building](/uploads/mvimg_20190924_092023.jpg "Class building")</p> Classes focused rather intensely on naming synonyms/antonyms of known vocabulary, as well as articulating the differences between closely related words and phrases. I really appreciated these lessons even for that reason alone. They were great for cultivating a better command of the language.
 
 ## Reading/Writing
 
@@ -46,11 +38,7 @@ On Tuesday and Thursday I had reading/writing class taught in the same room but 
 
 ## Listening
 
-Friday mornings were for listening class. Listening to audio tracks and taking short workbook quizzes about them was the main focus of this class. Sometimes we watched documentaries and listened to music in Mandarin to get a sense of the language as used in different contexts. It was definitely good practice in learning to understand a wide variety of voices.
-
-<div>
-!\[Ginger Chicken Soup](/uploads/img_20191019_130453_exported_stabilized_178720828601232833.gif "Ginger Chicken Soup")
-</div>
+Friday mornings were for listening class. Listening to audio tracks and taking short workbook quizzes about them was the main focus of this class. <div>![Ginger Chicken Soup](/uploads/img_20191019_130453_exported_stabilized_178720828601232833.gif "Ginger Chicken Soup")</div> Sometimes we watched documentaries and listened to music in Mandarin to get a sense of the language as used in different contexts. It was definitely good practice in learning to understand a wide variety of voices.
 
 ## Philosophy
 
